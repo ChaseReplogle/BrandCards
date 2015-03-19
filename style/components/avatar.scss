@@ -1,0 +1,65 @@
+/*
+ * Main styles for the site wide avatars
+ */
+
+// main styles
+.avatar {
+	border-radius: 500px;
+	border: 1px solid $gray_light;
+}
+
+
+/*
+ * Removes options from the edit profile page.
+ */
+
+// Remove
+label[for="simple-local-avatar"],
+.wpua-edit-container h3,
+.edit-profile .wpua-edit-container,
+#wpua-upload-messages-existing,
+#wpua-preview-existing,
+#wpua-images-existing,
+.wpua-edit-container .description,
+#wpua-remove-button-existing,
+#wpua-undo-button-existing,
+.wpua-edit input[type="submit"]
+ {
+	display: none !important;
+}
+
+// Styles for the profile image upload
+.avatar_upload {
+	margin-top: 10px;
+}
+
+
+#wpua-upload-button-existing {
+	input[type="file"] {
+		width: 60%;
+		float: left;
+		padding: 22px 4%;
+		border: 1px solid $gray_lighten;
+		font-size: 14px;
+		line-height: 14px;
+		color: $gray;
+
+		@media ( max-width : 641px ) {
+			width: 100%;
+		}
+	}
+
+	button[type="submit"] {
+		width: 40%;
+		float: right;
+		border-radius: 0px 4px 4px 0px;
+		padding: 25px 0px;
+		border-radius: 4px;
+
+		@media ( max-width : 641px ) {
+			width: 100%;
+			margin: 10px 0px 20px 0px;
+		}
+	}
+
+}

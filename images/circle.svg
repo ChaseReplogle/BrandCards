@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Bitmap 4 + +</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="21.75" cy="22.25" rx="21.75" ry="21.75"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Book__Dashboard" sketch:type="MSArtboardGroup" transform="translate(-373.000000, -225.000000)">
+            <g id="Chase-Replogle-2-+-Bitmap-13" sketch:type="MSLayerGroup" transform="translate(374.000000, 225.000000)">
+                <g id="Bitmap-4-+-+">
+                    <g id="Bitmap-4">
+                        <mask id="mask-2" sketch:name="Mask" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#9B9B9B" stroke-dasharray="4" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="+" sketch:type="MSTextLayer" font-family="Source Sans Pro" font-size="24" font-weight="260" fill="#9C9C9C">
+                        <tspan x="16" y="30.5">+</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

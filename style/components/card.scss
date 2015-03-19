@@ -1,0 +1,95 @@
+.card {
+
+
+}
+
+.page-template-page-dashboard .card {
+	width: 33%;
+	float: left;
+	margin-right: .33333333%;
+	margin-top: 4px;
+	position: relative;
+
+	@media ( max-width : 641px ) {
+		width: 49.3333333%
+	}
+}
+
+.brand-cover {
+	position: relative;
+	border: 1px solid $gray_light;
+
+	img {
+		height: auto;
+		width: auto;
+		display: block;
+	}
+}
+
+.brand-cover-logo:before{
+	content: "";
+	display: block;
+	padding-top: 80%;
+}
+
+.card-inner {
+  	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  	width: 70%;
+  	margin: 10% auto;
+}
+
+#image {
+  position: absolute;
+  top: 0px;
+}
+
+.brand-cover-author {
+	position: absolute;
+	bottom: -40px;
+	left: 15px;
+	z-index: 9999;
+
+	@media ( max-width : 641px ) {
+		display: none;
+	}
+
+	.avatar {
+		float: left;
+		margin-right: 5px;
+		border: 0px;
+	}
+
+	p {
+		float: left;
+		line-height: 55px;
+		font-size: 13px;
+	}
+}
+
+.brand-cover-not-admin {
+	margin-bottom: 50px;
+
+	@media ( max-width : 641px ) {
+		margin-bottom: 0px;
+	}
+}
+
+
+
+.details-card {
+	position: relative;
+
+	.brand-cover-author {
+		bottom: -50px;
+		left: 20px;
+
+		p {
+			font-size: 14px;
+			line-height: 60px;
+		}
+	}
+}

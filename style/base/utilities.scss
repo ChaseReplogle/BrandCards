@@ -1,0 +1,124 @@
+/*
+ * Add a border to the bottom of an element.
+ */
+.row-border-bottom {
+	border-bottom: 1px solid $gray_light;
+}
+
+/*
+ * Center Elements
+ */
+.centered {
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*
+ * Add some stock padding
+ */
+.top-padding {
+	padding-top: 30px;
+
+	@media ( max-width : 775px ) {
+		padding-top: 15px;
+	}
+}
+
+
+
+
+/*
+ * Generic Class To Lighten
+ */
+.lighten {
+	opacity: .6;
+}
+
+
+/*
+ * Remove Bullets form <ul>
+ */
+.no-bullets {
+	margin: 0px;
+	padding: 0px;
+
+	li {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+}
+
+
+
+/*
+ * Use this to remove elements from the print screen.
+ */
+	@media print
+	{
+	    .no-print, .no-print *
+	    {
+	        display: none !important;
+	    }
+	}
+
+
+
+.hidden {
+	visibility: hidden;
+	height: 0px;
+}
+
+
+
+/*
+ * Modal Styles
+ */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: $gray_light;
+    opacity: .75 !important;
+    display: none;
+}
+
+.modal {
+	display: none;
+	max-width: 800px;
+	width: 80%;
+    top: 50px !important;
+	margin: 0 auto;
+	background: $white;
+	border: 1px solid $gray_mid;
+
+	.header {
+		padding: 30px 5% 40px 5%;
+
+		h4 {
+			font-size: 18px;
+			color: $green;
+			font-weight: 700;
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.form {
+		padding: 30px 5% 40px 5%;
+		background: $gray_lightest;
+		border-top: 1px solid $gray-mid;
+
+		.gform_wrapper {
+			margin: 0px;
+			max-width: 100%;
+		}
+	}
+}
+
+
+

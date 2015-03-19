@@ -1,0 +1,48 @@
+.dashboard-blank_slate {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+
+
+	@media ( max-width : 641px ) {
+		display: none;
+	}
+
+	h2 {
+		font-weight: 700;
+		color:  darken($gray_light, 30%);
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+
+	&:after {
+		display: block;
+		position: absolute;
+		top: -80px;
+		right: 30px;
+	    content: "";
+	    width: 140px;
+	    height: 240px;
+	    background: transparent url('../images/arrow.svg') no-repeat;
+
+	    @media ( max-width : 641px ) {
+			display: none;
+	    }
+	}
+}
+
+.blank-slate-box {
+	width: 32%;
+	background: lighten($gray_light, 4%);
+	display: block;
+	float: left;
+	margin-right: 1.33333333%;
+	margin-top: 4px;
+}
+
+.blank-slate-box:before{
+	content: "";
+	display: block;
+	padding-top: 80%;
+}

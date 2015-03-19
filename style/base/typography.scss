@@ -1,0 +1,109 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $gray_dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+h1 {
+	color: $green;
+	font-size: 28px;
+	font-weight: 300;
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+	@media ( max-width : 641px ) {
+		font-size: 25px;
+	}
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 300;
+	color: $black;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+p, input, textarea, a {
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+p + hr {
+	margin-top: 20px;
+	display: block;
+}
+
+.serif {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.secondary {
+	font-size: 13px;
+	color: $gray;
+	line-height: 22px;
+}
+
+.tiny {
+	font-size: 11px;
+	color: $gray;
+	line-height: 16px;
+}
+
+
+a {
+	color: $gray_dark;
+}
+
+a:visited {
+	color: $gray_dark;
+}
+
+a:hover {
+	color: $black;
+}
+
+.right {
+	text-align: right;
+
+	@media ( max-width : 641px ) {
+		text-align: left;
+	}
+}
+
+.left {
+	text-align: left;
+}
+
+.italic {
+	font-style: italic;
+}
+
+hr {
+	background: $gray_light;
+}
+
+.quote {
+	color: $green;
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: 300;
+}
+
+.citation {
+	margin-top: 20px;
+	color: darken($gray_light, 20%);
+}

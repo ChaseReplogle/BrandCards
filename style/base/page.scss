@@ -1,0 +1,32 @@
+/*
+ * Basic Page level styles
+ */
+
+body {
+	background: $gray_lightest;
+	padding-bottom: 200px;
+}
+
+#content {
+	margin-top: 50px;
+
+	@media ( max-width : 641px ) {
+		margin-top: 20px;
+	}
+}
+
+/*
+ * Creates the White boxes through the site
+ */
+.page-box {
+	background: $white;
+	padding: 5%;
+	border: 1px solid $gray_light;
+}
+
+/*
+ * Adds extra padding when a .page-box is agaisnt a grid col
+ */
+.page-box + .col {
+	padding-left: 30px;
+}

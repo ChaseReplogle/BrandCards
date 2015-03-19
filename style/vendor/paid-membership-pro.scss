@@ -1,0 +1,116 @@
+/*
+ * Removes styling and adds spacing for the generic containers used in PMPro Forms
+ */
+#pmpro_account .pmpro_box {
+	border-top: 0px;
+	margin: 0px 0px 30px 0px;
+	padding-bottom: 40px;
+
+	@media ( max-width : 641px ) {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+	#pmpro_account .pmpro_box p {
+		margin: 0px;
+	}
+
+/*
+ * Removes and sets up some base styles for PMPro tables
+ */
+.form-table th {
+	width: 100%;
+	display: block;
+	padding: 0px;
+	font-weight: 400;
+}
+
+.form-table td {
+	width: 100%;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+input + h3, table + h3 {
+	display: none;
+}
+
+.indicator-hint {
+	display: none;
+}
+
+.form-table input {
+	margin: 0px 0px 15px 0px;
+	padding: 10px 20px;
+	line-height: inherit;
+}
+
+.form-table {
+	border: 0px;
+
+	td, th {
+		background: transparent;
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+
+
+
+/*
+ * Handles defualt styling for PMPro forms -- should match the main forms.scss styles
+ */
+form.pmpro_form label {
+	margin: 0px 0px 3px;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
+	display: inline-block;
+ 	width: 100%;
+ 	padding: 10px 20px;
+ 	margin-bottom: 20px;
+ 	background: $gray_lightest;
+ 	border: 1px solid $gray_mid;
+}
+
+.pmpro_checkout select {
+	font-size: 14px;
+}
+
+form.pmpro_form div {
+	clear: none;
+	margin: 0px;
+}
+
+#pmpro_payment_information_fields {
+	margin-top: 40px;
+}
+
+.submit {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+nav#nav-below {
+	display: none;
+}
+
+#pmpro_checkout_box-checkout_boxes {
+	border: 0px;
+	padding: 0px;
+	background: transparent;
+}
+
+#pmpro_checkout_box-checkout_boxes td, #pmpro_checkout_box-checkout_boxes tr, #pmpro_checkout_box-checkout_boxes thead th {
+	border: 0px;
+	padding: 0px;
+	background: transparent;
+}

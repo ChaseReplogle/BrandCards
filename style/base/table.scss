@@ -1,0 +1,42 @@
+/*
+ * Sets Basic Table formats for the site.
+ */
+table {
+	border-top: 1px solid $gray_lighten;
+	border-left: 1px solid $gray_lighten;
+	margin: 0px;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid $gray_lighten;
+	border-right: 1px solid $gray_lighten;
+	font-size: 14px;
+}
+
+td {
+	background: $white;
+}
+
+th {
+	background: $gray-lightest;
+	font-weight: 400;
+}
+
+ table td a {
+ 	font-size: 14px;
+ 	color: $green;
+
+ 	&:visited {
+ 		color: $green;
+ 	}
+ }
+
+
+/*
+ * Allows for text to be aligned left in tables
+ */
+ .cell-left {
+ 	text-align: left;
+ }

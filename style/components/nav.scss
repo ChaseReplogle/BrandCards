@@ -1,0 +1,239 @@
+// Primary navigation styles
+
+li > ul, li > ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu {
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu-item {
+	list-style: none;
+	display: inline-block;
+
+	a {
+		text-decoration: none;
+		color: $gray_dark;
+		padding-left: 10px;
+		font-size: 13px;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	&:first-child a {
+		padding-left: 0px;
+	}
+}
+
+.current-menu-item {
+	a {
+		color: $green;
+	}
+}
+
+
+
+
+// Main navigation used on the marketing site as well as the account navigation at the top of the page.
+.main-nav {
+	background: $white;
+	border-bottom: 1px solid $gray_light;
+	padding: 10px 0px;
+}
+
+.main-nav .menu {
+	padding: 5px 0px 0px 0px;
+}
+
+.main-nav .branding {
+	float: left;
+	padding-top: 6px;
+}
+
+.main-nav .avatar {
+	float: right;
+	margin: 3px 0px 0px 15px;
+}
+
+
+.main-nav-right .menu {
+	float: right;
+}
+
+
+
+
+// Bar Navigation: places a gray bar beneath the links.
+.bar-nav {
+	margin-bottom: 50px;
+	border-bottom: 1px solid $gray_light;
+
+	@media ( max-width : 641px ) {
+		margin-bottom: 0px;
+	}
+}
+
+.bar-nav .menu-item {
+	margin: 0px;
+	margin-left: -5px;
+	padding-bottom: 6px;
+
+	&:first-child {
+		margin-left: 0px;
+	}
+
+	&:first-child a {
+	}
+
+	@media ( max-width : 641px ) {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid $gray_light;
+		padding: 10px 0px;
+    }
+}
+
+.bar-nav .menu-item a {
+	padding: 0px 16px 0px 16px;
+
+	@media ( max-width : 641px ) {
+		display: block;
+		width: 100%;
+    }
+}
+
+.bar-nav .current-menu-item {
+	border-bottom: 2px solid $green;
+
+	a {
+		color: $green;
+	}
+
+	@media ( max-width : 641px ) {
+		border-bottom: 1px solid $green;
+    }
+}
+
+.bar-nav .menu:hover > .current-menu-item {
+	border-bottom: 2px solid $gray_light;
+
+	a {
+		color: $gray;
+	}
+
+	@media ( max-width : 641px ) {
+		border-bottom: 1px solid $green;
+
+		a {
+			color: $green;
+		}
+    }
+}
+
+.bar-nav .menu:hover > .menu-item:hover {
+	border-bottom: 2px solid $green;
+
+	a {
+		color: $green;
+
+	}
+
+	@media ( max-width : 641px ) {
+		border-bottom: 1px solid $gray_light;
+
+		a {
+			color: $gray;
+		}
+    }
+}
+
+
+.bar-nav .menu-item {
+
+	&:first-child a {
+		padding-left: 13px;
+	}
+}
+
+
+.menu-item.right {
+	float: right;
+}
+
+.page-template-page-account .bar-nav, .page-template-page-profile-image .bar-nav {
+	margin: 30px 0px;
+}
+
+.page-id-4 .bar-nav {
+	margin: 0px;
+}
+
+
+
+
+// Toggles Mobile Menu
+.mobile-nav {
+	display: none;
+
+	@media ( max-width : 641px ) {
+		display: block;
+    }
+}
+
+.wide-nav {
+	@media ( max-width : 641px ) {
+		display: none;
+    }
+}
+
+
+.mobile-menu-icon svg {
+	height: 15px;
+	width: 15px;
+	float: right;
+	margin-left: 15px;
+	position: relative;
+	top: 8px;
+	opacity: .8;
+}
+
+
+.mobile-nav-panel {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+
+	.branding {
+		display: none;
+	}
+
+	.avatar {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+		width: 100%;
+
+		li {
+			display: block;
+			width: 100%;
+			border-top: 1px solid $gray_light;
+			padding: 15px 20px;
+
+			a {
+				text-align: left;
+				display: block;
+			}
+
+			&:first-child a {
+				padding-left: 10px;
+			}
+		}
+	}
+}

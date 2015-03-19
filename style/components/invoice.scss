@@ -1,0 +1,125 @@
+/*
+ * Primary Styles for the print invoice page
+ */
+.invoice {
+	border: 1px solid $gray_mid;
+}
+
+	// Single Invoice Page
+	.pmpro_single_invoice {
+		border-top: 4px solid $gray;
+		border-left: 0px;
+		margin-top: 40px;
+	}
+
+	// Remove Defualt Table Styles
+	.pmpro_single_invoice th, .pmpro_single_invoice td {
+		background: transparent;
+		border: 0px;
+	}
+
+	// Remove Defualt Table Styles
+	.pmpro_single_invoice th {
+		border-bottom: 1px solid $gray_lighten;
+		padding-top: 40px;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		font-weight: strong;
+	}
+
+	// New styles for the invoice page
+	.pmpro_single_invoice td {
+		border-bottom: 1px solid $gray_lighten;
+		padding: 30px 0px;
+	}
+
+	.pmpro_single_invoice h2 {
+		color: $gray;
+	}
+
+	.invoice .header h2 {
+		font-size: 40px;
+		margin-bottom: 10px;
+		font-weight: 700;
+		line-height: 45px;
+	}
+
+	 .invoice .header {
+	 	padding-bottom: 30px;
+	 }
+
+	 .thank-you h2 {
+		padding: 50px 0px;
+	 	text-align: center;
+	 	border-bottom: 4px solid $gray;
+	 	font-size: 60px;
+	 	color: $gray_light;
+	 	font-weight: 700;
+	 }
+
+	 .invoice .footer {
+		padding-top: 15px;
+	 }
+
+	 .brandcards-address {
+	 	float: right;
+
+	 	img {
+	 		margin-bottom: 15px;
+	 	}
+	 }
+
+	.pmpro_a-back {
+	 	text-decoration: none;
+	 }
+
+	 .invoice-pre-header {
+	 	margin-bottom: 15px;
+	 }
+
+	.invoice-pre-header p {
+	 	text-align: right;
+	 	color: lighten($gray, 15%);
+	}
+
+	.invoice-pre-header p a {
+	  	font-weight: 700;
+		text-decoration: none;
+		padding-right: 10px;
+	}
+
+
+
+// invoice list items on the main account page
+.invoices {
+	@media ( max-width : 641px ) {
+		padding-bottom: 15px;
+	}
+}
+
+.invoice-item {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: inline-block;
+	float: left;
+	width: 33.33333333%;
+
+	@media ( max-width : 641px ) {
+		width: 100%;
+		float: none;
+	}
+
+	a {
+		text-decoration: none;
+		text-align: center;
+		border: 1px solid $gray-mid;
+		padding: 15px 0px;
+		display: block;
+		margin: 15px 15px 0px 0px;
+	}
+
+	&:first-child a {
+		background: $white;
+	}
+}

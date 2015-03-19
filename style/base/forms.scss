@@ -1,0 +1,297 @@
+/*
+ * Sets up basic form settings
+ */
+* {border:0;outline:0;}
+
+label {
+	display: block;
+	margin-bottom: 3px;
+	text-align: left;
+	font-size: 13px;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+ 	display: block;
+ 	width: 100%;
+ 	padding: 10px 20px;
+ 	margin-bottom: 20px;
+ 	background: $gray_lightest;
+ 	border: 1px solid $gray_mid;
+}
+
+.gform_wrapper .gform_body input[type="text"].large, .gform_wrapper .gform_body input[type="url"].large, .gform_wrapper .gform_body input[type="email"].large, .gform_wrapper .gform_body input[type="tel"].large, .gform_wrapper .gform_body input[type="number"].large, .gform_wrapper .gform_body input[type="password"].large, .gform_wrapper .gform_body textarea {
+	display: block;
+ 	width: 100%;
+ 	padding: 15px 20px;
+ 	margin-bottom: 20px;
+ 	background: $gray_lightest;
+ 	border: 1px solid $gray_mid;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+   color: $gray_lighten;
+}
+
+.gform_wrapper .gform_body input[type="text"].large:focus, .gform_wrapper .gform_body input[type="url"].large:focus, .gform_wrapper .gform_body input[type="email"].large:focus, .gform_wrapper .gform_body input[type="tel"].large:focus, .gform_wrapper .gform_body input[type="number"].large:focus, .gform_wrapper .gform_body input[type="password"].large:focus, .gform_wrapper .gform_body textarea.medium:focus {
+ 	background: $white;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus, .textarea:focus {
+ 	background: $white;
+}
+
+select {
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+   background: url(../images/select.svg) no-repeat 95% 50% $gray_lightest;
+	width: 100%; /*Width of select dropdown to give space for arrow image*/
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+	text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+	color: $gray;
+ 	border: 1px solid $gray_mid;
+ 	padding: 12px 20px;
+ 	font-size: 14px;
+}
+
+// Smaller width select items
+.span_6 select {
+	background-position: 85% 50%;
+}
+
+// Descriptions beneath form inputs
+span.description {
+	font-size: 13px;
+	position: relative;
+	top: -18px;
+	color: lighten($gray, 5%);
+	font-style: italic;
+}
+
+.content .gform_wrapper .description, .content .gform_wrapper .gfield_description, .content .gform_wrapper .gsection_description, .content .gform_wrapper .instruction {
+	font-size: 13px;
+}
+
+
+.page-template-page-brand-details .gform_wrapper .gform_body .top_label .gfield_label, .page-template-page-brand-edit .gform_wrapper .gform_body .top_label .gfield_label {
+	color: darken($gray_mid, 10%);
+}
+
+
+.gform_wrapper.gf_browser_gecko .gform_body .gfield_checkbox li input[type="checkbox"], .gform_wrapper.gf_browser_chrome .gform_body .gfield_checkbox li input[type="checkbox"] {
+  width: 28px;
+  visibility: hidden;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  margin-left: -9999999999px;
+}
+
+.gform_wrapper .gfield_checkbox li input[type="checkbox"]:not(old) + label {
+  display: inline-block;
+  margin-left: 0px;
+  padding-left: 48px;
+  background: url('../images/checkbox.svg') no-repeat 0 0;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:not(old):checked + label {
+	font-weight: 400;
+  	background: url('../images/checkedbox.svg') no-repeat 0 0;
+}
+
+
+.gform_wrapper.gf_browser_chrome .gform_body ul.gform_fields li.gfield input[type=radio] {
+	margin-left: -99999px;
+}
+
+.gform_wrapper .gform_body .tabbed {
+	input {
+		margin-left: -99999px;
+
+		&:checked + label {
+			background: $white;
+		}
+	}
+
+	li {
+		width: 50%;
+		float: left;
+
+		label {
+			margin: 0px;
+			border: 1px solid $gray_lighten;
+			padding: 30px 0px;
+			text-align: center;
+		}
+
+			&:last-child label {
+				border-left: 0px;
+			}
+	}
+}
+
+
+.tabbed.narrow {
+	position: relative;
+
+	.gfield_label {
+		display: block;
+		width: 100%;
+		padding-bottom: 80px;
+	}
+
+	.ginput_container {
+		width: 60%;
+		position: absolute;
+		top: 30px;
+	}
+
+	.gfield_description {
+		width: 35%;
+		right: 0px;
+		position: absolute;
+		top: 30px;
+		color: darken($gray_mid, 10%);
+		padding-top: 10px;
+	}
+}
+
+
+.upload .ginput_container {
+	display: block;
+	border: 1px solid $gray_lighten;
+	background: lighten($gray_light, 3%);
+	padding: 5% 5%;
+
+	input {
+		text-align: left;
+	}
+}
+
+
+
+.page-template {
+	.gfield {
+		margin-bottom: 20px;
+	}
+
+	.gform_wrapper .top_label .gfield_label {
+		font-weight: normal;
+	}
+}
+
+
+.gform_wrapper .gform_body ul li.color_picker {
+	position: relative;
+	float: left;
+	height: 57px;
+	width: 10%;
+	background: black;
+	border-radius: 4px 0px 0px 4px;
+	clear: none;
+	margin-top: 36px;
+	border: 1px solid $gray_mid;
+	border-right: 0px;
+}
+
+.gform_wrapper .gform_body ul li.color_picker_field {
+	width: 90%;
+	float: left;
+	clear: none;
+
+	label {
+		margin-left: -11%;
+	}
+
+	input {
+		border-radius: 0px 4px 4px 0px;
+	}
+}
+
+
+.gform_wrapper .gform_body .gsection {
+	margin-top: 40px;
+
+	h2 {
+		font-weight: 200;
+		color: $gray;
+	}
+
+}
+
+.ginput_container[style*="height: 0px;"] {
+	padding: 0px;
+}
+
+
+.gform_wrapper .gform_body ul.gform_fields {
+	padding-bottom: 30px;
+}
+
+
+.gform_update_post_upload_container {
+	margin-top: 0px;
+
+	&:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	p.gform_update_post_upload_link {
+		width: 85%;
+		float: left;
+	}
+
+	a:nth-child(1) {
+		float: left;
+
+		img {
+			border: 1px solid $gray_lighten;
+		}
+	}
+
+	a:nth-child(2) {
+		text-decoration: none;
+
+		strong {
+			font-weight: normal;
+			padding-top: 17px;
+			display: block;
+
+			@media ( max-width : 890px ) {
+				padding-top: 0px;
+			}
+
+			@media ( max-width : 320px ) {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}
+
+	a.gform_update_post_delete_link {
+		width: 15%;
+		float: right;
+		margin: 1em 0px 0px;
+		padding-top: 17px;
+		text-align: right;
+
+		@media ( max-width : 890px ) {
+			width: 100%;
+			margin-top: 0px;
+			text-align: left;
+			padding-top: 5px;
+		}
+	}
+}
+
+
+
+
+
+.gform_wrapper form .gform_body ul.gform_fields {
+	padding-bottom: 0px;
+}
