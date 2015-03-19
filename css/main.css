@@ -1009,7 +1009,7 @@ a:visited {
   color: #777777; }
 
 a:hover {
-  color: #2C2C2C; }
+  color: #80CA9C; }
 
 .right {
   text-align: right; }
@@ -1985,6 +1985,8 @@ input.pmpro_btn-cancel {
 .brand-dash-header .edit-links a {
   padding-right: 10px;
   color: #b8b8b8; }
+  .brand-dash-header .edit-links a:hover {
+    color: #80CA9C; }
 .brand-dash-header .new-card a {
   color: #858585;
   text-decoration: none;
@@ -2004,6 +2006,10 @@ input.pmpro_btn-cancel {
     position: relative;
     top: 20px;
     margin-right: 14px; }
+  .brand-dash-header .new-card a:hover {
+    color: #80CA9C; }
+    .brand-dash-header .new-card a:hover:before {
+      background: url("../images/square_hover.svg") no-repeat 0 0; }
   @media (max-width: 642px) {
     .brand-dash-header .new-card a {
       text-align: center;
@@ -2041,6 +2047,10 @@ input.pmpro_btn-cancel {
       position: relative;
       top: 17px;
       margin-right: 14px; }
+    .user-column .new-user a:hover {
+      color: #80CA9C; }
+      .user-column .new-user a:hover:before {
+        background: url("../images/circle_hover.svg") no-repeat 0 0; }
   .user-column .user-title {
     display: block;
     margin-top: 20px;
@@ -2068,6 +2078,8 @@ input.pmpro_btn-cancel {
           text-align: right;
           text-decoration: underline;
           color: #c1c1c1; }
+          .user-column .user-item .user-links p a:hover {
+            color: #80CA9C; }
         .user-column .user-item .user-links p a.transfer-link {
           width: 100%; }
     @media (max-width: 900px) {

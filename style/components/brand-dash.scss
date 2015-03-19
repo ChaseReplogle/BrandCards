@@ -34,6 +34,10 @@
 		a {
 			padding-right: 10px;
 			color: lighten($gray, 20%);
+
+			&:hover {
+				color: $green;
+			}
 		}
 	}
 
@@ -59,6 +63,14 @@
 				position: relative;
 				top: 20px;
 				margin-right: 14px;
+			}
+
+			&:hover {
+				color: $green;
+
+				&:before {
+					background: url('../images/square_hover.svg') no-repeat 0 0;
+				}
 			}
 
 
@@ -112,6 +124,14 @@
 				top: 17px;
 				margin-right: 14px;
 			}
+
+			&:hover {
+				color: $green;
+
+				&:before {
+					background: url('../images/circle_hover.svg') no-repeat 0 0;
+				}
+			}
 		}
 	}
 
@@ -153,6 +173,10 @@
 					text-align: right;
 					text-decoration: underline;
 					color: darken($gray_mid, 5%);
+
+					&:hover {
+						color: $green;
+					}
 				}
 
 				a.transfer-link {
