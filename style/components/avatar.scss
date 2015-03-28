@@ -6,6 +6,10 @@
 .avatar {
 	border-radius: 500px;
 	border: 1px solid $gray_light;
+
+	&:hover {
+		opacity: .8;
+	}
 }
 
 
@@ -30,11 +34,10 @@ label[for="simple-local-avatar"],
 
 // Styles for the profile image upload
 .avatar_upload {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
-
-#wpua-upload-button-existing {
+.avatar_upload {
 	input[type="file"] {
 		width: 60%;
 		float: left;
@@ -49,7 +52,7 @@ label[for="simple-local-avatar"],
 		}
 	}
 
-	button[type="submit"] {
+	input[type="submit"] {
 		width: 40%;
 		float: right;
 		border-radius: 0px 4px 4px 0px;
@@ -61,5 +64,28 @@ label[for="simple-local-avatar"],
 			margin: 10px 0px 20px 0px;
 		}
 	}
+}
 
+
+
+.page-template-page-account-php {
+	#simple-local-avatar-photo {
+		display: none;
+	}
+
+	#_simple_local_avatar_nonce {
+		display: none;
+	}
+
+	td p span.description {
+		display: none;
+	}
+
+	#simple-local-avatar {
+		display: none;
+	}
+
+	#simple-local-avatar-remove {
+		display: none;
+	}
 }

@@ -5,3 +5,73 @@
 		margin: 0px;
 	}
 }
+
+.container .gform_wrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+#mceu_24, #mceu_21, .wp-editor-tools {
+	display: none;
+}
+
+.mce-statusbar .mce-container-body {
+	background-color: $gray_lightest;
+}
+
+.wp-editor-container {
+	border: 1px solid $gray_light;
+}
+
+.wp-editor-container #wp-fullscreen-buttons .mce-btn, .wp-editor-container .mce-toolbar .mce-btn-group .mce-btn, .wp-editor-container .qt-dfw {
+	border: 0px;
+	background: transparent;
+	background-image: none;
+}
+
+
+.wp-editor-container div.mce-panel iframe {
+	min-height: 400px !important;
+}
+
+.wp-editor-container .div.mce-toolbar-grp {
+	background-color: $gray_lightest;
+}
+
+
+div.mce-edit-area {
+	padding: 5%;
+}
+
+
+
+.gf_left_fourth {
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+}
+
+.gf_left_middle_fourth {
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+}
+
+
+.gf_right_middle_fourth {
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2%;
+}
+
+
+.gf_right_fourth {
+	width: 23%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0%;
+}

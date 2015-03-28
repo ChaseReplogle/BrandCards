@@ -73,7 +73,7 @@ position: relative;}
 
 /*	COLUMN WIDTH ON DISPLAYS +768px
 	You might need to play with media queries here to suite your design. */
-@media ( min-width : 641px ) {
+
 	.span_1 { width: 4.16666666667%; }
     .span_2 { width: 8.33333333333%; }
     .span_3 { width:12.5%; }
@@ -123,9 +123,16 @@ position: relative;}
 	.gutters .span_22 { width: 91.5%; }
 	.gutters .span_23 { width: 95.75%; }
 	.gutters .span_24 { width: 100%; }
+
+@media ( max-width : 641px ) {
+	div[class|='span_'] {
+		width: 100%;
+	}
+
+	.gutters div[class*='span_'] {
+		width: 100%;
+	}
 }
-
-
 
 @media print {
 	.span_1 { width: 4.16666666667%; }

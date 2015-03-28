@@ -49,82 +49,83 @@ get_header(); ?>
 						</div>
 
 
-						<header class="bar-nav">
+						<header class="bar-nav dash-nav">
 							<div class="row">
 								<ul class="menu centered">
-									<li class="menu-item current-menu-item"><a href="#">All Brands</a></li>
-									<li class="menu-item"><a href="#">I Own</a></li>
-									<li class="menu-item"><a href="#">I Can Edit</a></li>
-									<li class="menu-item"><a href="#">I Can View</a></li>
-									<li class="menu-item"><a href="#">Archived</a></li>
+									<li class="menu-item current-menu-item"><a href="#all" id="all">All Brands</a></li>
+									<li class="menu-item"><a href="#own">I Own</a></li>
+									<li class="menu-item"><a href="#edit">I Can Edit</a></li>
+									<li class="menu-item"><a href="#view">I Can View</a></li>
+									<li class="menu-item"><a href="#archived">Archived</a></li>
 								</ul>
 							 </div>
 						</header>
 
 						<?php if(pmpro_hasMembershipLevel(array(1,2,3))) { ?>
-						<div class="row covers">
 							<?php $role = 'administrator';?>
 							<?php $sites = get_blogs_of_user_by_role($user_id, $role); ?>
 							<?php if($sites) { ?>
-							<p class="secondary row-border-bottom">Brands I Own <span class="lighten">(<?php echo admin_blog_count($user_id); ?>/<?php echo $creation_limit; ?>)</span></p>
-								<?php foreach ($sites as $site) { ?>
-									<?php brand_cover($site, $role); ?>
-								<?php } ?>
+								<div class="row covers own" id="own">
+									<p class="secondary row-border-bottom">Brands I Own <span class="lighten">(<?php echo admin_blog_count($user_id); ?>/<?php echo $creation_limit; ?>)</span></p>
+									<?php foreach ($sites as $site) { ?>
+										<?php brand_cover($site, $role); ?>
+									<?php } ?>
+								</div>
 							<?php } else { ?>
-
-									<div class="dashboard-blank_slate blank_slate">
-										<h2>Let's Get Started!</h2>
+								<div class="row covers own" id="own">
+									<div class="covers dashboard-blank_slate blank_slate">
+										<h2>Let's Get Started! Create A Brand Above.</h2>
 										<p class="quote">&ldquo;The secret of getting ahead is getting started.<br />The secret of getting started is breaking your complex tasks into small manageable tasks, and then just starting on the first one.&rdquo;</p>
 										<p class="citation">- Mark Twain, American Humorist & Writer</p>
 									</div>
-
+								</div>
 							<?php } ?>
-						</div>
 						<?php } ?>
-
-						<div class="row covers top-padding">
 
 							<?php $role = 'editor';?>
 							<?php $sites = get_blogs_of_user_by_role($user_id, $role); ?>
 							<?php if($sites) { ?>
-							<p class="secondary row-border-bottom">I Can Edit</p>
-								<?php foreach ($sites as $site) {?>
-									<?php brand_cover($site, $role); ?>
-								<?php } ?>
+								<div class="row covers top-padding edit" id="edit">
+									<p class="secondary row-border-bottom">I Can Edit</p>
+										<?php foreach ($sites as $site) {?>
+											<?php brand_cover($site, $role); ?>
+										<?php } ?>
+								</div>
 							<?php } else { ?>
 							<?php } ?>
-						</div>
 
-						<div class="row covers top-padding">
+
 							<?php $role = 'subscriber';?>
 							<?php $sites = get_blogs_of_user_by_role($user_id, $role); ?>
 							<?php if($sites) { ?>
-							<p class="secondary row-border-bottom">I Can View</p>
-								<?php foreach ($sites as $site) {?>
-									<?php brand_cover($site, $role); ?>
-								<?php } ?>
+								<div class="row covers top-padding view" id="view">
+									<p class="secondary row-border-bottom">I Can View</p>
+										<?php foreach ($sites as $site) {?>
+											<?php brand_cover($site, $role); ?>
+										<?php } ?>
+								</div>
 							<?php } else { ?>
 							<?php } ?>
-						</div>
+
 
 
 						<?php if(pmpro_hasMembershipLevel(array(1,2,3))) { ?>
-						<div class="row covers top-padding archived">
 							<?php $role = 'administrator';?>
 							<?php $sites = archived_brands($user_id, $role); ?>
 							<?php if($sites) { ?>
-							<p class="secondary row-border-bottom">Archived</p>
-								<?php foreach ($sites as $site) {?>
-									<li><?php echo $site->blogname; ?>
-										<?php if ($creation_limit > $creation_count) { ?>
-											<?php $url = add_query_arg(array('action'=>'unarchive_brand', 'brand_id'=>$site->userblog_id)); ?>
-												<a href="<?php echo $url; ?>" class="secondary restore">(restore)</a>
+								<div class="row covers top-padding archived archived" id="archived">
+									<p class="secondary row-border-bottom">Archived</p>
+										<?php foreach ($sites as $site) {?>
+											<li><?php echo $site->blogname; ?>
+												<?php if ($creation_limit > $creation_count) { ?>
+													<?php $url = add_query_arg(array('action'=>'unarchive_brand', 'brand_id'=>$site->userblog_id)); ?>
+														<a href="<?php echo $url; ?>" class="secondary restore">(restore)</a>
+												<?php } ?>
+											</li>
 										<?php } ?>
-									</li>
-								<?php } ?>
+								</div>
 							<?php } else { ?>
 							<?php } ?>
-						</div>
 						<?php } ?>
 
 				<?php } else { ?>

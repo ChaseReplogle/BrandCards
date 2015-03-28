@@ -38,7 +38,7 @@ function create_brand_form($user_id) { ?>
                 <span class="url_extention">.brandcards.com</span>
             </div>
             <div class="col span_24">
-                <p class="secondary"><span class="description">The subdomain name you provide will create the url associated with your brand. Don not inlude "http://" or "www."</span></p>
+                <p class="secondary"><span class="description">The subdomain name you provide will create the url associated with your brand. Do not inlude "http://" or "www."</span></p>
                 <hr />
             </div>
 
@@ -46,7 +46,7 @@ function create_brand_form($user_id) { ?>
             <div class="col span_24">
                 <input type="hidden" name="createBrand" id="submitted" value="true" />
                 <?php wp_nonce_field( 'post_nonce', 'post_nonce_field' ); ?>
-                <button type="submit"><?php _e('Create Brand', 'framework') ?></button>
+                <button type="submit" class="button-primary"><?php _e('Create Brand', 'framework') ?></button>
             </div>
         </div>
 

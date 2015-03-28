@@ -1,0 +1,222 @@
+form.pmpro_form {
+
+	.pmpro_submit {
+		width: 100%;
+		margin: 0px;
+
+		#pmpro_submit_span {
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			width: 100%;
+			display: block;
+			margin-top: 30px;
+			font-size: 16px;
+		}
+
+		span {
+			float: none;
+		}
+	}
+
+}
+
+
+.registration-form-wrapper {
+	background: white;
+	border: 1px solid $gray-light;
+	padding: 50px 8%;
+}
+
+
+
+input.pmpro_required {
+	position: relative;
+}
+
+.pmpro_asterisk {
+	display: none;
+}
+
+
+.check-out-header {
+	text-align: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.level-explanation p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $gray-light;
+}
+
+
+
+#pmpro_checkout_box-checkout_boxes {
+	thead {
+		display: none;
+	}
+}
+
+form.pmpro_form div.cvv-col {
+	margin-top: -22px;
+
+	small {
+		position: absolute;
+		top: -23px;
+		right: 3px;
+
+		a {
+			text-decoration: none;
+			color: $gray_mid;
+		}
+	}
+}
+
+form.pmpro_form .credit-card-wrapper {
+	margin-bottom: 30px;
+	padding: 30px 60px 60px 60px;
+
+	h3 {
+		margin-bottom: 40px;
+	}
+}
+
+form.pmpro_form .hidden {
+	height: 0px;
+}
+
+form.pmpro_form .cards-accepted {
+	clear: both;
+	display: block;
+	width: 100%;
+
+	.pmpro_thead-msg{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+}
+
+
+.already-account {
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	color: $gray_mid;
+	font-size: 14px;
+
+	a {
+		color: $gray_mid;
+		font-size: 14px;
+
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+
+#pmpro_billing_address_fields div:first-of-type {
+	color: $green;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+
+.first_name_field {
+	width: 48%;
+	float: left;
+}
+
+.last_name_field {
+	width: 48%;
+	float: right;
+}
+
+form.pmpro_form .city_field  {
+	width: 50%;
+	float: left;
+	margin-right: 2%;
+}
+
+form.pmpro_form .state_field  {
+	width: 20%;
+	float: left;
+	margin-right: 2%;
+}
+
+.zip_field {
+	width: 26%;
+	float: right;
+}
+
+
+form.pmpro_form .hidden {
+	margin: 0px;
+	padding: 0px;
+
+	input, label {
+		margin: 0px;
+		padding: 0px;
+		height: 0px;
+	}
+}
+
+
+
+.registration-sidebar {
+	h4 {
+		margin: 30px 0px 5px 0px;
+		color: $green;
+		font-size: 20px;
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		li {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			font-size: 14px;
+			margin-top: 7px;
+		}
+	}
+
+	.learn-more{
+		margin-top: 15px;
+		color: $gray-mid;
+		font-size: 12px;
+		display: block;
+	}
+
+	.brand-cover {
+		margin-bottom: 60px;
+	}
+}
+
+
+
+.cost-sidebar {
+
+	.price p  {
+		font-size: 50px;
+		line-height: 65px;
+		color: $green;
+	}
+
+	a.button {
+		margin: 20px 0px;
+		border: 1px solid $gray-light;
+	}
+}

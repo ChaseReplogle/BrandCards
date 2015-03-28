@@ -49,3 +49,32 @@ $('.mobile-menu-icon').click(function(event) {
 	event.preventDefault();
     $( '.wide-nav' ).toggleClass( "mobile-nav-panel" );
 });
+
+
+$('.dash-nav .menu-item a').not('#all').click(function(event) {
+	event.preventDefault();
+	var cover = $(this).attr("href");
+    $( '.covers' ).not(cover).slideUp( 'fast' );
+    $( '.dash-nav .menu-item' ).removeClass( "current-menu-item" );
+    $( this ).parent('.menu-item').addClass( "current-menu-item" );
+    $( cover ).slideDown( 'fast' );
+
+
+});
+
+$('#all').click(function(event) {
+	event.preventDefault();
+
+	$(".covers").each(function() {
+
+        if( $(this).is(':visible') ) {
+
+        } else {
+            $(this).slideDown('fast');
+        }
+    });
+
+    $( '.dash-nav .menu-item' ).removeClass( "current-menu-item" );
+    $( this ).parent('.menu-item').addClass( "current-menu-item" );
+});
+

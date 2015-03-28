@@ -75,6 +75,8 @@ function brandcards_scripts() {
 	wp_enqueue_script( 'brandcards-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'brandcards-image-upload', get_template_directory_uri() . '/js/image-upload.js' );
 	wp_enqueue_script( 'brandcards-card', get_template_directory_uri() . '/js/card.js' );
+	wp_enqueue_script( 'brandcards-form', get_template_directory_uri() . '/js/forms.js' );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'brandcards_scripts' );
@@ -100,6 +102,13 @@ require get_template_directory() . '/functions/functions-invite.php';
  * Handles Transfer of Ownership on Brands
  */
 require get_template_directory() . '/functions/functions-transfer.php';
+
+
+/**
+ * Handles Changing Avatar
+ */
+require get_template_directory() . '/functions/functions-upload-avatar.php';
+
 
 
 

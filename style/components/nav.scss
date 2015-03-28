@@ -71,7 +71,6 @@ li > ul, li > ol {
 // Bar Navigation: places a gray bar beneath the links.
 .bar-nav {
 	margin-bottom: 50px;
-	border-bottom: 1px solid $gray_light;
 
 	@media ( max-width : 641px ) {
 		margin-bottom: 0px;
@@ -81,7 +80,7 @@ li > ul, li > ol {
 .bar-nav .menu-item {
 	margin: 0px;
 	margin-left: -5px;
-	padding-bottom: 6px;
+	padding-bottom: 4px;
 
 	&:first-child {
 		margin-left: 0px;
@@ -119,24 +118,8 @@ li > ul, li > ol {
     }
 }
 
-.bar-nav .menu:hover > .current-menu-item {
-	border-bottom: 2px solid $gray_light;
-
-	a {
-		color: $gray;
-	}
-
-	@media ( max-width : 641px ) {
-		border-bottom: 1px solid $green;
-
-		a {
-			color: $green;
-		}
-    }
-}
 
 .bar-nav .menu:hover > .menu-item:hover {
-	border-bottom: 2px solid $green;
 
 	a {
 		color: $green;
@@ -179,6 +162,7 @@ li > ul, li > ol {
 // Toggles Mobile Menu
 .mobile-nav {
 	display: none;
+	padding-bottom: 7px;
 
 	@media ( max-width : 641px ) {
 		display: block;

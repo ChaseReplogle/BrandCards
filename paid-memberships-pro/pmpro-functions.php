@@ -92,11 +92,11 @@ function pmproan2c_pmpro_checkout_after_password()
 $first_name = $_REQUEST['first_name'];
 $last_name = $_REQUEST['last_name'];
 ?>
-<div>
+<div class="first_name_field">
 <label for="first_name">First Name</label>
 <input id="first_name" name="first_name" type="text" class="input pmpro_required" size="30" value="<?=$first_name?>" />
 </div>
-<div>
+<div  class="last_name_field">
 <label for="last_name">Last Name</label>
 <input id="last_name" name="last_name" type="text" class="input pmpro_required" size="30" value="<?=$last_name?>" />
 </div>

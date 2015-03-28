@@ -1,26 +1,34 @@
-$( document ).ready(function() {
-	var img = $("#image");
-	var imageWidth = img.width();
-	var imageHeight = img.height();
 
-	if(imageHeight >imageWidth)
-	    $("#image").attr('style',"height:100%;");
-	else
-	    $("#image").attr('style',"width:100%;");
+	function center_image() {
+		$( ".card-image" ).each(function() {
+			var img = $(this);
+			var imageWidth = img.width();
+			var imageHeight = img.height();
+
+			if(imageHeight > imageWidth)
+			    $(this).attr('style',"height:100%;");
+			else
+			    $(this).attr('style',"width:100%;");
+
+			 $(this).css({
+		        left: ($(this).parent('.card-inner').width() - $(this).outerWidth())/2,
+		        top: ($(this).parent('.card-inner').height() - $(this).outerHeight())/2
+		    });
+		});
+	 }
 
 
-	$( window ).load(function() {
-	 $('#image').css({
-	        left: ($(".card-inner").width() - $('#image').outerWidth())/2,
-	        top: ($(".card-inner").height() - $('#image').outerHeight())/2
-	    });
-	 });
+	$(document).ready( function() {
+		center_image();
+	});
 
-	$( window ).resize(function() {
-	 $('#image').css({
-	        left: ($(".card-inner").width() - $('#image').outerWidth())/2,
-	        top: ($(".card-inner").height() - $('#image').outerHeight())/2
-	    });
-	 });
+	$(window).resize( function() {
+		center_image();
+	});
 
-});
+	$(".card-image").load( function() {
+		center_image();
+	});
+
+
+

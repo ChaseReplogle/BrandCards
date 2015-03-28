@@ -28,7 +28,10 @@ get_header(); ?>
 
 					<div class="row gutters">
 						<div class="col span_16 avatar_upload large-gutter">
-					 		<?php echo do_shortcode('[avatar_upload]'); ?>
+							<form action="" method="POST" enctype="multipart/form-data">
+							    <input type="file" name="file">
+							    <input type="submit" name="sub" value="Upload Image">
+							</form>
 					 	</div>
 					 	<div class="col span_8">
 							<h1>Profile Image</h1>

@@ -1,12 +1,9 @@
 <?php
 	global $wpdb, $current_user, $pmpro_msg, $pmpro_msgt, $show_paypal_link;
 	global $bfirstname, $blastname, $baddress1, $baddress2, $bcity, $bstate, $bzipcode, $bcountry, $bphone, $bemail, $bconfirmemail, $CardType, $AccountNumber, $ExpirationMonth, $ExpirationYear;
-
 	$gateway = pmpro_getOption("gateway");
-
 	//set to true via filter to have Stripe use the minimal billing fields
 	$pmpro_stripe_lite = apply_filters("pmpro_stripe_lite", !pmpro_getOption("stripe_billingaddress")); //default is oposite of the stripe_billingaddress setting
-
 	$level = $current_user->membership_level;
 	if($level)
 	{
@@ -307,7 +304,6 @@
 					//setup braintree encryption
 					var braintree = Braintree.create('<?php echo pmpro_getOption("braintree_encryptionkey"); ?>');
 					braintree.onSubmitEncryptForm('pmpro_form');
-
 					//pass expiration dates in original format
 					function pmpro_updateBraintreeCardExp()
 					{
@@ -317,7 +313,6 @@
 						pmpro_updateBraintreeCardExp();
 					});
 					pmpro_updateBraintreeCardExp();
-
 					//pass last 4 of credit card
 					function pmpro_updateBraintreeAccountNumber()
 					{
