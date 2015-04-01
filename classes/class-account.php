@@ -75,6 +75,13 @@ function get_blogs_of_user_by_role( $user_id, $role ) {
         if ($blog_id == 1) {
         	unset($blogs[ $blog_id ] );
         }
+
+        // Remove the blog if it is archived
+        $blog_details = get_blog_details($blog_id);
+
+        if ($blog_details->archived == 1) {
+          unset($blogs[ $blog_id ] );
+        }
     }
 
     return $blogs;
@@ -96,7 +103,7 @@ function admin_blog_count($user_id) {
 	$role = 'administrator';
 
 	// Get ALL blogs for a given user by their ID.
-	$blogs = get_blogs_of_user( $user_id );
+	$blogs = get_blogs_of_user( $user_id, false );
 
 	// set up a counter
 	$count = 0;

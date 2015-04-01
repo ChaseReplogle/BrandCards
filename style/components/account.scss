@@ -217,6 +217,9 @@
 	margin-top: -10px;
 	display: block;
 	width: 100%;
+	background: transparent;
+	border: 0px;
+	text-align: left;
 
 	&:before {
 		content: ".";
@@ -227,7 +230,7 @@
 		font-size: 0px;
 		background: $gray_light;
 		margin: 0px 6px 0px 0px;
-		top: 5px;
+		top: 10px;
 		left: -20px;
 		border-radius: 15px;
 	}
@@ -236,6 +239,7 @@
 // Strong Indicator
 #pass-strength-result.strong {
 	color: $green;
+	background: transparent;
 
 	&:before {
 		background: $green;
@@ -244,6 +248,8 @@
 
 // Medium Indicator
 #pass-strength-result.good {
+	background: transparent;
+
 	&:before {
 		background: $yellow;
 	}
@@ -252,6 +258,7 @@
 // Weak Indicator
 #pass-strength-result.bad, #pass-strength-result.short {
 	color: $red;
+	background: transparent;
 
 	&:before {
 		background: $red;
@@ -286,3 +293,35 @@
 
 
 
+
+
+
+#invite_blog_id_tr, #invite_role_tr, #transfer_id_tr {
+		visibility: hidden;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+
+	label, input {
+		visibility: hidden;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+
+#theme-my-login .form-table  {
+
+	tr, td {
+		visibility: hidden;
+		height: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+
+form.pmpro_form .pmpro_message, .login p.message {
+	margin-bottom: 15px;
+}

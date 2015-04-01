@@ -31,4 +31,7 @@
 	});
 
 
-
+$(document).ready( function() {
+$('.text-fill').textfill({
+});
+});

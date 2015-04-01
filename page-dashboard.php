@@ -16,8 +16,6 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php if(pmpro_hasMembershipLevel(array(1, 2, 3, 4))) { ?>
-
 						<?php $user_id = get_current_user_id(); ?>
 
 						<div id="pmpro_account-membership" class="pmpro_box row">
@@ -63,6 +61,7 @@ get_header(); ?>
 
 						<?php if(pmpro_hasMembershipLevel(array(1,2,3))) { ?>
 							<?php $role = 'administrator';?>
+							<?php $user_id = get_current_user_id(); ?>
 							<?php $sites = get_blogs_of_user_by_role($user_id, $role); ?>
 							<?php if($sites) { ?>
 								<div class="row covers own" id="own">
@@ -127,12 +126,6 @@ get_header(); ?>
 							<?php } else { ?>
 							<?php } ?>
 						<?php } ?>
-
-				<?php } else { ?>
-
-					<h2>Error Message: You can't view this page with your account </h2>
-
-				<?php } ?>
 
 			<?php endwhile; // end of the loop. ?>
 

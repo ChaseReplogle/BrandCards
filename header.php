@@ -1,4 +1,4 @@
-<?php
+<?php if (!is_user_logged_in() && !is_front_page()) { wp_redirect( '/'); exit; }
 /**
  * The header for our theme.
  *
@@ -13,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 
 <?php wp_head(); ?>
 </head>
