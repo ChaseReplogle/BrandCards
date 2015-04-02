@@ -179,7 +179,7 @@ add_filter('plugin_row_meta', 'pmproan2c_plugin_row_meta', 10, 2);
 
 /*
  5. Redirect everyone except for super admin to the dashboard
-*/
+
 add_action( 'admin_init', 'custom_wpadmin_blockusers_init' );
 function custom_wpadmin_blockusers_init() {
   if ( !current_user_can( 'manage_network' ) ) {

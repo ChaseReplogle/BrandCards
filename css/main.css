@@ -1060,7 +1060,11 @@ p + hr {
   line-height: 16px; }
 
 a {
-  color: #777777; }
+  color: #777777;
+  outline: 0; }
+
+a:hover, a:active, a:focus {
+  outline: 0; }
 
 a:visited {
   color: #777777; }
@@ -2850,22 +2854,30 @@ input.pmpro_btn-cancel {
     margin-top: 10px;
     margin-bottom: 6px; }
   .user-column .user-item {
-    padding: 5px 0px 0px 0px; }
+    padding: 5px 0px 5px 0px; }
     .user-column .user-item img {
       display: block;
       width: 100%;
       cursor: pointer; }
-    .user-column .user-item a {
+    .user-column .user-item p.username {
       font-size: 13px;
-      margin: 10px 0px 6px 10px;
-      text-decoration: none;
+      margin: 2px 0px 2px 10px;
       display: block; }
+      .user-column .user-item p.username a {
+        text-decoration: none;
+        font-size: 13px; }
+    .user-column .user-item p.email {
+      font-size: 13px;
+      color: #CECECE;
+      line-height: 11px;
+      margin: 0px 0px 0px 10px; }
     .user-column .user-item .user-links {
       display: none; }
       .user-column .user-item .user-links p {
         margin-left: 11px; }
         .user-column .user-item .user-links p a {
           width: 48%;
+          font-size: 13px;
           display: block;
           float: right;
           margin: 11px 0px;
@@ -2890,7 +2902,9 @@ input.pmpro_btn-cancel {
           width: 75%;
           float: right; } }
   .user-column .user-item-invited a {
-    color: #CECECE; }
+    color: #858585; }
+    .user-column .user-item-invited a:hover {
+      color: #80CA9C; }
   .user-column .user-item-invited .user-links a {
     color: #DADADA; }
 
@@ -2910,11 +2924,11 @@ input.pmpro_btn-cancel {
   .page-template-page-brand-dashboard .bar-nav {
     display: none; } }
 
-#loading-animation {
+.page-template-page-brand-dashboard #loading-animation {
   display: none;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 40px;
+  right: 5px;
   width: 25px;
   height: auto; }
 
@@ -3134,6 +3148,18 @@ form.pmpro_form .hidden {
 .cost-sidebar a.button {
   margin: 20px 0px;
   border: 1px solid #EDEDED; }
+
+.registration-form-wrapper form.pmpro_form #pmpro_processing_message {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px; }
+  .registration-form-wrapper form.pmpro_form #pmpro_processing_message img {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    margin-right: 10px; }
 
 .single-cards #content {
   margin-top: 25px; }

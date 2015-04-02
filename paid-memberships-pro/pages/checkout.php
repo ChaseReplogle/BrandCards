@@ -29,7 +29,8 @@
 	<?php if($pmpro_msg)
 		{
 	?>
-
+		<div id="pmpro_message" class="pmpro_message <?php echo $pmpro_msgt?>"><?php echo $pmpro_msg?></div>
+	<?php
 		}
 		else
 		{
@@ -688,6 +689,7 @@
 		<?php } ?>
 
 		<span id="pmpro_processing_message" style="visibility: hidden;">
+			<img src="<?php network_site_url(); ?>/wp-content/themes/brandcards/images/ajax-loader.gif" id="loading-animation" />
 			<?php
 				$processing_message = apply_filters("pmpro_processing_message", __("Processing...", "pmpro"));
 				echo $processing_message;

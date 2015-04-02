@@ -65,6 +65,11 @@ p + hr {
 
 a {
 	color: $gray_dark;
+   	outline: 0;
+}
+
+a:hover, a:active, a:focus {
+  outline: 0;
 }
 
 a:visited {

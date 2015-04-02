@@ -71,11 +71,11 @@ function brandcards_scripts() {
 	wp_enqueue_style( 'merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,700' );
 
 
-	wp_enqueue_script( 'brandcards-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' );
+	wp_enqueue_script( 'brandcards-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', array(), '20120206', true );
 	wp_enqueue_script( 'brandcards-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'brandcards-image-upload', get_template_directory_uri() . '/js/image-upload.js' );
-	wp_enqueue_script( 'brandcards-card', get_template_directory_uri() . '/js/card.js' );
-	wp_enqueue_script( 'brandcards-form', get_template_directory_uri() . '/js/forms.js' );
+	wp_enqueue_script( 'brandcards-image-upload', get_template_directory_uri() . '/js/image-upload.js', array(), '20120206', true );
+	wp_enqueue_script( 'brandcards-card', get_template_directory_uri() . '/js/card.js', array(), '20120206', true );
+	wp_enqueue_script( 'brandcards-form', get_template_directory_uri() . '/js/forms.js', array(), '20120206', true );
 
 
 }

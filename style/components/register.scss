@@ -220,3 +220,22 @@ form.pmpro_form .hidden {
 		border: 1px solid $gray-light;
 	}
 }
+
+
+
+
+.registration-form-wrapper form.pmpro_form #pmpro_processing_message {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 10px;
+
+	img {
+		position: relative;
+		top: 10px;
+		display: inline-block;
+		margin-right: 10px;
+
+	}
+}
