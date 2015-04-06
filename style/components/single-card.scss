@@ -85,30 +85,58 @@
 
 	#arrow-nav {
 		margin-bottom: 15px;
-		margin-top: 20px;
+		margin-top: 5px;
 
 		.nav-previous {
 			float: left;
+			width: 20%;
+			display: inline-block;
 
 			a {
 				text-decoration: none;
 				font-size: 11px;
 				color: $gray-mid;
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.nav-label {
+			float: left;
+			width: 60%;
+			display: inline-block;
+
+			span {
+				text-decoration: none;
+				font-size: 11px;
+				color: $gray-mid;
+				text-align: center;
+				width: 100%;
+				display: block;
+				padding: 5px 0px;
+
 			}
 		}
 
 		.nav-next {
 			float: right;
+			width: 20%;
+			display: inline-block;
 
 			a {
 				text-decoration: none;
 				font-size: 11px;
 				color: $gray-mid;
+				text-align: right;
+				width: 100%;
+				display: block;
 			}
 		}
 	}
 
 	.content-column {
+		margin-left: 0px;
+
 		@media ( max-width : 641px ) {
 			width: 100%;
 		}
