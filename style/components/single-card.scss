@@ -147,7 +147,7 @@
 	.card-meta {
 		float: left;
 		display: inline-block;
-		padding: 4% 8% 4% 0px;
+		padding: 4% 8% 4% 0%;
 
 		.meta-item {
 			border-bottom: 1px solid $gray-light;
@@ -164,6 +164,11 @@
 				display: inline-block;
 			}
 		}
+	}
+
+	.card-meta.full-width {
+		width: 100%;
+		padding: 4% 0% 4% 0%;
 	}
 
 	.card-content {

@@ -3362,7 +3362,7 @@ form.pmpro_form .hidden {
 .single-cards .card-meta {
   float: left;
   display: inline-block;
-  padding: 4% 8% 4% 0px; }
+  padding: 4% 8% 4% 0%; }
   .single-cards .card-meta .meta-item {
     border-bottom: 1px solid #EDEDED;
     color: #b8b8b8;
@@ -3375,6 +3375,9 @@ form.pmpro_form .hidden {
       float: left;
       padding-right: 70px;
       display: inline-block; }
+.single-cards .card-meta.full-width {
+  width: 100%;
+  padding: 4% 0% 4% 0%; }
 .single-cards .card-content {
   margin-top: 20px;
   padding-right: 3%; }
