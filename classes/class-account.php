@@ -153,6 +153,11 @@ function user_brand_list($user_id) {
   <?php // Set up foreach loop to go through the blogs.
     foreach ( $blogs as $blog_id => $blog ) { ?>
 
+        <?php // Remove the BrandCards from the list.
+        if ($blog_id == 1) {
+          continue;
+        } ?>
+
         <li><?php print_r($blog->blogname); ?></li>
 
     <?php } ?>
