@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Signup page
+*/
 /**
  * The template for displaying 404 pages (not found).
  *
