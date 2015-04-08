@@ -4,7 +4,8 @@
  *
  * @package brandcards
  */
-require_once(dirname(__FILE__) . '/options.php');
+require( ‘../../../wp-load.php’ );
+require( ‘../../../wp-blog-header.php’ );
 
 get_header(); ?>
 
