@@ -12,3 +12,14 @@ $( document ).ready(function() {
 		$("#blastname").val(this.value);
 	});
 });
+
+
+
+$('.brand-create-submit').click(function() {
+	$('#pmpro_processing_message').css( 'visibility', 'visible' );
+});
+
+
+
+
+

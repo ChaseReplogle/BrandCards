@@ -28,6 +28,15 @@
 		width: auto;
 		display: block;
 	}
+
+	h2.default-title {
+		position: absolute;
+		width: 100%;
+		color: $gray;
+		text-align: center;
+		bottom: 45%;
+		font-size: 15px;
+	}
 }
 
 .brand-cover-logo:before{

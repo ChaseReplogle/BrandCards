@@ -325,3 +325,19 @@
 form.pmpro_form .pmpro_message, .login p.message {
 	margin-bottom: 15px;
 }
+
+
+
+
+#pmpro_processing_message {
+	p {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	img {
+		margin-right: 10px;
+		position: relative;
+		top: 9px;
+	}
+}

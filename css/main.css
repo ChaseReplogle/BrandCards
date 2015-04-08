@@ -1862,6 +1862,14 @@ label[for="simple-local-avatar"],
 form.pmpro_form .pmpro_message, .login p.message {
   margin-bottom: 15px; }
 
+#pmpro_processing_message p {
+  text-align: center;
+  margin-top: 20px; }
+#pmpro_processing_message img {
+  margin-right: 10px;
+  position: relative;
+  top: 9px; }
+
 /*
  * Primary Button Styles
  */
@@ -2117,6 +2125,13 @@ input.pmpro_btn-cancel {
     height: auto;
     width: auto;
     display: block; }
+  .brand-cover h2.default-title {
+    position: absolute;
+    width: 100%;
+    color: #858585;
+    text-align: center;
+    bottom: 45%;
+    font-size: 15px; }
 
 .brand-cover-logo:before {
   content: "";
@@ -3265,6 +3280,9 @@ form.pmpro_form .hidden {
     top: 10px;
     display: inline-block;
     margin-right: 10px; }
+
+.page-template-page-brand-details .gform_wrapper .gform_body .color_picker_field input[type="text"].large {
+  width: 90%; }
 
 .single-cards #content {
   margin-top: 25px; }

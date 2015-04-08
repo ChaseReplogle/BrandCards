@@ -46,7 +46,7 @@ function create_brand_form($user_id) { ?>
             <div class="col span_24">
                 <input type="hidden" name="createBrand" id="submitted" value="true" />
                 <?php wp_nonce_field( 'post_nonce', 'post_nonce_field' ); ?>
-                <button type="submit" class="button-primary"><?php _e('Create Brand', 'framework') ?></button>
+                <button type="submit" class="button-primary brand-create-submit"><?php _e('Create Brand', 'framework') ?></button>
             </div>
         </div>
 
