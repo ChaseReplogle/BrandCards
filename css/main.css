@@ -2850,12 +2850,12 @@ input.pmpro_btn-cancel {
     color: #CECECE; }
     .brand-dash-header p.secondary a:hover {
       color: #80CA9C; }
+.brand-dash-header a {
+  text-decoration: none; }
 .brand-dash-header h1 {
   color: #858585;
   font-size: 16px;
   margin-bottom: 0px; }
-  .brand-dash-header h1 a {
-    text-decoration: none; }
 .brand-dash-header .edit-links {
   float: right;
   margin-top: 35px; }
