@@ -350,3 +350,101 @@ form.pmpro_form .pmpro_message, .login p.message {
 		top: 9px;
 	}
 }
+
+
+
+.levels-header {
+	margin-bottom: 70px;
+
+	p {
+		color: lighten($gray, 10%);
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+
+#pmpro_levels_table {
+	background: transparent;
+
+	.level-item {
+		background: white;
+		border: 1px solid $gray-light;
+		padding: 5%;
+		margin-bottom: 20px;
+
+		.level-title {
+			h3 {
+				text-align: center;
+				padding: 0px;
+				margin: 0px;
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid $gray-light;
+			}
+		}
+
+		.level-cost {
+			h2 {
+				color: $gray;
+				text-align: center;
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid $gray-light;
+			}
+		}
+
+		.level-description {
+			ul {
+				padding: 0px;
+				margin: 0px;
+				padding-bottom: 20px;
+				margin-bottom: 40px;
+				border-bottom: 1px solid $gray-light;
+
+				li {
+					list-style: none;
+					padding: 0px;
+					margin: 0px;
+					font-size: 14px;
+					text-align: center;
+					margin-bottom: 10px;
+					color: $gray;
+
+					strong {
+						font-size: 16px;
+						display: block;
+						margin-bottom: 25px;
+					}
+				}
+			}
+		}
+
+		.pmpro_btn {
+			background: $green;
+			border: 1px solid $green-dark;
+			padding: 15px 0px;
+			color: white;
+			font-weight: 300;
+			font-size: 14px;
+			opacity: .8;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	.active {
+		background: transparent;
+
+		.pmpro_btn {
+			background: $gray-light;
+			border: 1px solid $gray-mid;
+			padding: 20px 0px;
+			color: $gray;
+			font-weight: 300;
+			font-size: 16px;
+		}
+	}
+}

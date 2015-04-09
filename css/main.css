@@ -1875,6 +1875,71 @@ form.pmpro_form .pmpro_message, .login p.message {
   position: relative;
   top: 9px; }
 
+.levels-header {
+  margin-bottom: 70px; }
+  .levels-header p {
+    color: #9f9f9f;
+    display: block;
+    margin-top: 10px; }
+
+#pmpro_levels_table {
+  background: transparent; }
+  #pmpro_levels_table .level-item {
+    background: white;
+    border: 1px solid #EDEDED;
+    padding: 5%;
+    margin-bottom: 20px; }
+    #pmpro_levels_table .level-item .level-title h3 {
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #EDEDED; }
+    #pmpro_levels_table .level-item .level-cost h2 {
+      color: #858585;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #EDEDED; }
+    #pmpro_levels_table .level-item .level-description ul {
+      padding: 0px;
+      margin: 0px;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #EDEDED; }
+      #pmpro_levels_table .level-item .level-description ul li {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #858585; }
+        #pmpro_levels_table .level-item .level-description ul li strong {
+          font-size: 16px;
+          display: block;
+          margin-bottom: 25px; }
+    #pmpro_levels_table .level-item .pmpro_btn {
+      background: #80CA9C;
+      border: 1px solid #488C62;
+      padding: 15px 0px;
+      color: white;
+      font-weight: 300;
+      font-size: 14px;
+      opacity: .8; }
+      #pmpro_levels_table .level-item .pmpro_btn:hover {
+        opacity: 1; }
+  #pmpro_levels_table .active {
+    background: transparent; }
+    #pmpro_levels_table .active .pmpro_btn {
+      background: #EDEDED;
+      border: 1px solid #CECECE;
+      padding: 20px 0px;
+      color: #858585;
+      font-weight: 300;
+      font-size: 16px; }
+
 /*
  * Primary Button Styles
  */
