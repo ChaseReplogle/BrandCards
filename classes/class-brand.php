@@ -23,7 +23,7 @@ function brand_cover($site, $role) { ?>
 
 		$details = get_posts( $args );
 
-		if ($details) {
+		if ($cover_image || $cover_logo) {
 
 			foreach ( $details as $detail ) : ?>
 				<?php $detail_ID = $detail->ID; ?>
