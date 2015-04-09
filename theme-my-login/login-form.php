@@ -4,11 +4,6 @@ If you would like to edit this file, copy it to your current theme's directory a
 Theme My Login will always look in your theme's directory first, before using this default template.
 */
 
-if (is_user_logged_in() ) {
-wp_redirect('/dashboard');
-exit;
-}
-
 
 ?>
 <div class="login" id="theme-my-login<?php $template->the_instance(); ?>">

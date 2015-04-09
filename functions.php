@@ -125,3 +125,19 @@ require get_template_directory() . '/classes/class-brand.php';
 
 
 
+
+
+/*
+	If a redirect_to value is passed into /login/ and you are logged in already, just redirect there
+*/
+function tml_redirect_to_logged_in()
+{
+	if(is_page("login") && is_user_logged_in() && empty($_REQUEST['reauth']))
+	{
+
+		wp_redirect('/dashboard');
+		exit;
+
+	}
+}
+add_action("template_redirect", "tml_redirect_to_logged_in");
