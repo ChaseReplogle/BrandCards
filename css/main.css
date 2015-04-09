@@ -1677,7 +1677,12 @@ label[for="simple-local-avatar"],
     .page-template-page-dashboard #pmpro_account-membership {
       margin-bottom: 30px; }
       .page-template-page-dashboard #pmpro_account-membership .dashboard-hello {
-        text-align: center; } }
+        text-align: center;
+        width: 100%; }
+      .page-template-page-dashboard #pmpro_account-membership .span_6 {
+        width: 100%; }
+        .page-template-page-dashboard #pmpro_account-membership .span_6 .button-block {
+          margin: 25px 0px 0px 0px; } }
 @media (max-width: 641px) {
   .page-template-page-dashboard .bar-nav {
     display: none; } }
