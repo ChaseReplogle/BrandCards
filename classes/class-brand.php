@@ -119,6 +119,7 @@ function invite_brand_cover($site, $role) { ?>
 
 			foreach ( $details as $detail ) : ?>
 				<?php $detail_ID = $detail->ID; ?>
+				<a href="http://<?php echo $site->domain; ?>">
 
 					<?php $cover_image = get_post_meta($detail->ID, 'cover_image', true); ?>
 					<?php $cover_logo = get_post_meta($detail->ID, 'cover_logo', true); ?>
@@ -137,15 +138,19 @@ function invite_brand_cover($site, $role) { ?>
 							<img src="<?php echo $cover_image ?>" class="card-image" />
 						</div>
 
+					<?php }  else { ?>
+						<div class="brand-cover brand-cover-logo" style="background-color: #dedede;">
+							<div class="card-inner">
+								<img id="image" src="<?php network_site_url(); ?>/wp-content/themes/brandcards/images/gray.svg"  class="card-image" />
+							</div>
+						</div>
 					<?php } ?>
-
+				</a>
 			<?php endforeach; ?>
 
 		<?php } else { ?>
 			<a href="http://<?php echo $site->domain; ?>">
-				<div class="brand-cover">
-					<img src="http://dummyimage.com/1000x800/000/000" />
-				</div>
+
 			</a>
 
 		<?php } ?>
