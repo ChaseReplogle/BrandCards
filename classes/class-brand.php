@@ -138,7 +138,7 @@ function invite_brand_cover($site, $role) { ?>
 							<img src="<?php echo $cover_image ?>" class="card-image" />
 						</div>
 
-					<?php }  else { ?>
+					<?php } else { ?>
 						<div class="brand-cover brand-cover-logo" style="background-color: #dedede;">
 							<div class="card-inner">
 								<img id="image" src="<?php network_site_url(); ?>/wp-content/themes/brandcards/images/gray.svg"  class="card-image" />
