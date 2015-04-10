@@ -94,9 +94,8 @@ function transfer_login($user_login) {
 			   			wp_delete_post( $transfer->ID, true);
 			   		}
 
-					$blog_id = get_current_blog_id();
 					$args = array(
-						'blog_id'      => $blog_id,
+						'blog_id'      => $transfer_id,
 						'role'         => 'administrator',
 				 	);
 
