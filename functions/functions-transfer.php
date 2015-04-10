@@ -8,12 +8,14 @@
  */
 function my_pmpro_after_checkout_transfer($user_id)
 {
+
 	// It gets a hidden field variable for the invitiation blog id and role id that have been stored in the new users meta information.
+	$transfer = $_GET['action'];
 	$transfer_id = get_user_meta($user_id, "transfer_id", true);
 	$role = "administrator";
 
 		// Checks to make sure there is an existing invitation.
-		if (isset($transfer_id)) {
+		if (isset($transfer)) {
 			// It then adds the current user to the invited blog and sets it's
 	    	add_user_to_blog($transfer_id, $user_id, $role);
 
