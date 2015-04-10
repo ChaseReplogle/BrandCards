@@ -150,7 +150,10 @@ function invite_brand_cover($site, $role) { ?>
 
 		<?php } else { ?>
 			<a href="http://<?php echo $site->domain; ?>">
-
+				<div class="brand-cover">
+					<h2 class="default-title"><?php echo $site->blogname; ?></h2>
+					<img src="<?php echo get_site_url(1); ?>/wp-content/themes/brandcards/images/default_cover.jpg" />
+				</div>
 			</a>
 
 		<?php } ?>
