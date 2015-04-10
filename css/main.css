@@ -2903,6 +2903,8 @@ input.pmpro_btn-cancel {
     display: none; } }
 .brand-dash-header .brand-dash-header_text {
   margin-top: 5px; }
+  .brand-dash-header .brand-dash-header_text a {
+    text-decoration: none; }
   @media (max-width: 642px) {
     .brand-dash-header .brand-dash-header_text {
       text-align: center;
