@@ -3,11 +3,11 @@
  * This file handles functionality related to the users account.
  *
  *
- *	1. $creation_limit
- *	2. get_blogs_of_user_by_role()
- *	3. admin_blog_count()
+ *  1. $creation_limit
+ *  2. get_blogs_of_user_by_role()
+ *  3. admin_blog_count()
  *  4. user_brand_list()
- *	5. remove_user_fields()
+ *  5. remove_user_fields()
  *  6. user_profile_image()
  *  7. account_header()
  *  8. archived_brands()
@@ -27,23 +27,23 @@
 wp_get_current_user();
 
   $creation_limit = '';
-	$brand_limit = 1;
-	$designer_limit = 5;
-	$agency_limit = 10;
-	$member_limit = 0;
+  $brand_limit = 1;
+  $designer_limit = 5;
+  $agency_limit = 10;
+  $member_limit = 0;
 
-	if(pmpro_hasMembershipLevel(1)) {
-		$creation_limit = $brand_limit;
+  if(pmpro_hasMembershipLevel(1)) {
+    $creation_limit = $brand_limit;
 
-	} elseif(pmpro_hasMembershipLevel(2)) {
-		$creation_limit = $designer_limit;
+  } elseif(pmpro_hasMembershipLevel(2)) {
+    $creation_limit = $designer_limit;
 
-	} elseif(pmpro_hasMembershipLevel(3)) {
-		$creation_limit = $agency_limit;
+  } elseif(pmpro_hasMembershipLevel(3)) {
+    $creation_limit = $agency_limit;
 
-	} elseif(pmpro_hasMembershipLevel(4)) {
-		$creation_limit = $member_limit;
-	}
+  } elseif(pmpro_hasMembershipLevel(4)) {
+    $creation_limit = $member_limit;
+  }
 
 
 
@@ -57,7 +57,7 @@ wp_get_current_user();
  */
 function get_blogs_of_user_by_role( $user_id, $role ) {
 
-	// Get ALL blogs for a given user by their ID.
+  // Get ALL blogs for a given user by their ID.
     $blogs = get_blogs_of_user( $user_id );
 
     // Set up foreach loop to go through the blogs.
@@ -73,7 +73,7 @@ function get_blogs_of_user_by_role( $user_id, $role ) {
 
         // This removes the main BrandCards site which every member automatically becomes a subsriber of.
         if ($blog_id == 1) {
-        	unset($blogs[ $blog_id ] );
+          unset($blogs[ $blog_id ] );
         }
 
         // Remove the blog if it is archived
@@ -99,28 +99,28 @@ function get_blogs_of_user_by_role( $user_id, $role ) {
  */
 function admin_blog_count($user_id) {
 
-	// Sets role to admin.
-	$role = 'administrator';
+  // Sets role to admin.
+  $role = 'administrator';
 
-	// Get ALL blogs for a given user by their ID.
-	$blogs = get_blogs_of_user( $user_id, false );
+  // Get ALL blogs for a given user by their ID.
+  $blogs = get_blogs_of_user( $user_id, false );
 
-	// set up a counter
-	$count = 0;
+  // set up a counter
+  $count = 0;
 
-	// Set up foreach loop to go through the blogs.
+  // Set up foreach loop to go through the blogs.
     foreach ( $blogs as $blog_id => $blog ) {
 
-    	// Add 1 to the counter for each site
-    	$count ++;
+      // Add 1 to the counter for each site
+      $count ++;
 
-    	// Get the user object for the user for this blog.
+      // Get the user object for the user for this blog.
         $user = new WP_User( $user_id, '', $blog_id );
 
         // Remove this blog from the list if the user doesn't have the role for it.
         if ( ! in_array( $role, $user->roles ) ) {
 
-        	// Subtract 1 for each site that is removed
+          // Subtract 1 for each site that is removed
             --$count;
         }
 
@@ -410,7 +410,25 @@ function check_user_status_transfer(){
 
     if(pmpro_hasMembershipLevel(array(1,2,3), $user->ID) ) {
        wp_redirect( home_url() . "/login/?transfer_id=$id" ); exit;
+    } elseif($exists) {
+      wp_redirect( home_url() . "/login?url=%2Fmembership-account%2Fmembership-checkout%2F&level=1&brand=$id" ); exit;
     } else {
        wp_redirect( home_url() . "/membership-account/membership-checkout/?level=1&transfer_id=$id" ); exit;
     }
 }
+
+
+function level_four_login_redirect( $redirect_to, $request, $user )
+{
+    global $user;
+    $redirect_exists = $_GET['url'];
+    $redirect_to = $_GET['url'] . '?level=' . $_GET['level'] . '&transfer_id=' . $_GET['brand'];
+
+
+    if($redirect_exists) {
+       return $redirect_to;
+    } else {
+        return home_url();
+    }
+}
+add_filter("login_redirect", "level_four_login_redirect", 10, 3);
