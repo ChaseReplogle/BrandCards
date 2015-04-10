@@ -407,7 +407,7 @@ function check_user_status_transfer(){
 
     $exists = email_exists($decode_email);
 
-    if ( $exists && pmpro_hasMembershipLevel(array(1,2,3) ) {
+    if ( $exists && pmpro_hasMembershipLevel(array(1,2,3), $id) ) {
        wp_redirect( home_url() . "/login/?transfer_id=$id" ); exit;
     } else {
        wp_redirect( home_url() . "/membership-account/membership-checkout/?level=1&transfer_id=$id" ); exit;
