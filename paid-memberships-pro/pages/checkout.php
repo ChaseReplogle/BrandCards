@@ -53,7 +53,7 @@
 				<div class="level-explanation">
 					<?php
 						if(!empty($pmpro_level->description))
-							echo 'You Will Be Able To Manage ' . $pmpro_level->description . ' With This Plan.';
+							echo 'You will be able to manage ' . $pmpro_level->description . ' with this plan.';
 					?>
 				</div>
 
