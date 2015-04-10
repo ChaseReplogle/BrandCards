@@ -3535,3 +3535,13 @@ form.pmpro_form .hidden {
     font-weight: 300; }
     .notification-bar a:hover {
       color: white; }
+
+#message {
+  background: #858585;
+  padding: 10px 0px;
+  border-bottom: 1px solid #777777;
+  border-top: 1px solid #777777; }
+  #message p {
+    color: white;
+    font-size: 13px;
+    font-weight: 300; }

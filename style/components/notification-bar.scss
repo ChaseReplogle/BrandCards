@@ -21,3 +21,16 @@
 		}
 	}
 }
+
+#message {
+	background: $gray;
+	padding: 10px 0px;
+	border-bottom: 1px solid $gray_dark;
+	border-top: 1px solid $gray_dark;
+
+	p {
+		color: white;
+		font-size: 13px;
+		font-weight: 300;
+	}
+}
