@@ -22,8 +22,8 @@
 	}
 }
 
-#message {
-	background: $gray;
+#message.error {
+	background: $red;
 	padding: 10px 0px;
 	border-bottom: 1px solid $gray_dark;
 	border-top: 1px solid $gray_dark;
@@ -32,5 +32,6 @@
 		color: white;
 		font-size: 13px;
 		font-weight: 300;
+		text-align: center
 	}
 }
