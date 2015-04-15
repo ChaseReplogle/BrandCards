@@ -2521,7 +2521,8 @@ input.pmpro_btn-cancel {
     position: inherit;
     display: inline-block;
     padding-bottom: 10%;
-    height: 100%; }
+    height: 100%;
+    min-width: 100%; }
     .category-palette .card-single-wrapper .card-link-wrapper .card-link.palettes .card-link-a {
       position: inherit; }
     @media (max-width: 1000px) {
