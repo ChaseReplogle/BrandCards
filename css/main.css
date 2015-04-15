@@ -1431,7 +1431,8 @@ span.description {
 
 .gform_wrapper form table.gfield_list td.gfield_list_cell {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  vertical-align: top !important; }
   .gform_wrapper form table.gfield_list td.gfield_list_cell input {
     position: relative;
     top: 0px;
