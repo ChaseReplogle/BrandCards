@@ -1435,6 +1435,9 @@ span.description {
   .gform_wrapper form table.gfield_list td.gfield_list_cell input {
     position: relative;
     top: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
     margin: 0px; }
 
 /*
