@@ -1436,10 +1436,9 @@ span.description {
   .gform_wrapper form table.gfield_list td.gfield_list_cell input {
     position: relative;
     top: 0px;
-    margin: 0px;
     padding: 4px;
     display: block;
-    margin: 0px; }
+    margin: 10px 0px 10px 0px; }
 
 /*
  * Sets Basic Table formats for the site.
