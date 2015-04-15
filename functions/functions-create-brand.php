@@ -31,11 +31,11 @@ function create_brand_form($user_id) { ?>
 
             <div class="col span_8">
                 <!-- URL Subdomain name. example.brandcards.com -->
-                <label for="url"><?php _e('URL Subdomain', 'framework') ?></label>
+                <label for="url"><?php _e('Brand URL (example: apple.bradcardsapp.com)', 'framework') ?></label>
                 <input type="text" name="url" id="url" class="required" value="<?php if ( isset( $_POST['url'] ) ) echo $_POST['url']; ?>"/>
             </div>
             <div class="col span_16">
-                <span class="url_extention">.brandcards.com</span>
+                <span class="url_extention">.brandcardsapp.com</span>
             </div>
             <div class="col span_24">
                 <p class="secondary"><span class="description">The subdomain name you provide will create the url associated with your brand. Do not inlude "http://" or "www."</span></p>
