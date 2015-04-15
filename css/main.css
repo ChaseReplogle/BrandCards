@@ -1429,9 +1429,13 @@ span.description {
 .page-template-page-card-edit .edit-comment {
   display: block; }
 
-.gform_wrapper form table.gfield_list td.gfield_list_cell input {
-  position: relative;
-  top: 0px; }
+.gform_wrapper form table.gfield_list td.gfield_list_cell {
+  margin: 0px;
+  padding: 0px; }
+  .gform_wrapper form table.gfield_list td.gfield_list_cell input {
+    position: relative;
+    top: 0px;
+    margin: 0px; }
 
 /*
  * Sets Basic Table formats for the site.
