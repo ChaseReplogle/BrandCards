@@ -233,12 +233,13 @@ span.description {
 	float: left;
 	height: 57px;
 	width: 6%;
-	background: black;
+	background: white;
 	border-radius: 4px 0px 0px 4px;
 	clear: none;
 	margin-top: 36px;
 	border: 1px solid $gray_mid;
 	border-right: 0px;
+	cursor: pointer;
 }
 
 .gform_wrapper .gform_body ul li.color_picker_field {
