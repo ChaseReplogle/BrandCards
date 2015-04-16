@@ -2715,12 +2715,12 @@ input.pmpro_btn-cancel {
     line-height: auto;
     margin: 0px;
     margin-bottom: 0%;
-    font-size: 55px;
-    font-size: 5.5vm;
-    font-size: 5.5vmin;
-    line-height: 60px;
-    line-height: 7vm;
-    line-height: 7vmin; }
+    font-size: 50px;
+    font-size: 5vm;
+    font-size: 5vmin;
+    line-height: 50px;
+    line-height: 5vm;
+    line-height: 5vmin; }
     @media (max-width: 641px) {
       .card-link.typography h2 {
         font-size: 200px;
