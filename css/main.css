@@ -2923,11 +2923,13 @@ input.pmpro_btn-cancel {
       text-align: center;
       margin-top: 0px; } }
 .brand-dash-header .brand-dash-header_text-main {
-  margin-top: 20px; }
+  margin-top: 30px; }
   @media (max-width: 642px) {
     .brand-dash-header .brand-dash-header_text-main {
       text-align: center;
       margin-top: 0px; } }
+.brand-dash-header .creator-included {
+  margin-top: 20px; }
 .brand-dash-header p.secondary {
   color: #CECECE; }
   .brand-dash-header p.secondary a {

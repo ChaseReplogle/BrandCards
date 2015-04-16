@@ -26,13 +26,19 @@
 	}
 
 	.brand-dash-header_text-main {
-		margin-top: 20px;
+		margin-top: 30px;
 
 		@media ( max-width : 642px ) {
 			text-align: center;
 			margin-top: 0px;
     	}
 	}
+
+	.creator-included {
+		margin-top: 20px;
+	}
+
+
 
 	p.secondary {
 		color: $gray_mid;
