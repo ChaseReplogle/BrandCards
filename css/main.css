@@ -3145,68 +3145,68 @@ input.pmpro_btn-cancel {
   text-align: left;
   font-size: 12px; }
 
-.login-form, .post-53 {
+.login-form, .post-53, .post-54 {
   width: 40%;
   margin: 0 auto;
   padding-top: 120px; }
   @media (max-width: 641px) {
-    .login-form, .post-53 {
+    .login-form, .post-53, .post-54 {
       width: 80%;
       padding-top: 80px; } }
   @media (max-width: 400px) {
-    .login-form, .post-53 {
+    .login-form, .post-53, .post-54 {
       width: 100%;
       padding-top: 30px; } }
-  .login-form .branding, .post-53 .branding {
+  .login-form .branding, .post-53 .branding, .post-54 .branding {
     padding: 0px 10%;
     margin-bottom: 15px; }
     @media (max-width: 400px) {
-      .login-form .branding, .post-53 .branding {
+      .login-form .branding, .post-53 .branding, .post-54 .branding {
         margin-bottom: 0px; } }
-  .login-form input, .post-53 input {
+  .login-form input, .post-53 input, .post-54 input {
     margin-bottom: 5px; }
-  .login-form p.message, .post-53 p.message {
+  .login-form p.message, .post-53 p.message, .post-54 p.message {
     margin-bottom: 15px; }
-  .login-form .forgetmenot, .post-53 .forgetmenot {
+  .login-form .forgetmenot, .post-53 .forgetmenot, .post-54 .forgetmenot {
     width: 100%;
     float: left;
     padding: 5px 0px; }
-    .login-form .forgetmenot input, .post-53 .forgetmenot input {
+    .login-form .forgetmenot input, .post-53 .forgetmenot input, .post-54 .forgetmenot input {
       display: inline;
       margin-right: 10px; }
-    .login-form .forgetmenot label, .post-53 .forgetmenot label {
+    .login-form .forgetmenot label, .post-53 .forgetmenot label, .post-54 .forgetmenot label {
       display: inline; }
-  .login-form .submit, .post-53 .submit {
+  .login-form .submit, .post-53 .submit, .post-54 .submit {
     width: 100%;
     float: right;
     margin-top: 15px; }
-    .login-form .submit input, .post-53 .submit input {
+    .login-form .submit input, .post-53 .submit input, .post-54 .submit input {
       font-size: 16px;
       padding: 30px 10px; }
-  .login-form .tml-action-links, .post-53 .tml-action-links {
+  .login-form .tml-action-links, .post-53 .tml-action-links, .post-54 .tml-action-links {
     width: 100%;
     display: block;
     margin: 0px;
     padding: 0px;
     padding-top: 10px; }
-    .login-form .tml-action-links li, .post-53 .tml-action-links li {
+    .login-form .tml-action-links li, .post-53 .tml-action-links li, .post-54 .tml-action-links li {
       list-style: none;
       margin: 0px;
       padding: 0px;
       display: inline-block;
       padding-left: 10px;
       float: right; }
-      .login-form .tml-action-links li a, .post-53 .tml-action-links li a {
+      .login-form .tml-action-links li a, .post-53 .tml-action-links li a, .post-54 .tml-action-links li a {
         font-size: 13px;
         color: #CECECE; }
-        .login-form .tml-action-links li a:hover, .post-53 .tml-action-links li a:hover {
+        .login-form .tml-action-links li a:hover, .post-53 .tml-action-links li a:hover, .post-54 .tml-action-links li a:hover {
           color: #858585; }
-  .login-form .message, .login-form .error, .post-53 .message, .post-53 .error {
+  .login-form .message, .login-form .error, .post-53 .message, .post-53 .error, .post-54 .message, .post-54 .error {
     display: block;
     text-align: center;
     color: #80CA9C;
     font-size: 14px; }
-  .login-form .error, .post-53 .error {
+  .login-form .error, .post-53 .error, .post-54 .error {
     color: #c0392b; }
 
 form.pmpro_form .pmpro_submit {
