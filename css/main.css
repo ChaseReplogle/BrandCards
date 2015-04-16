@@ -2321,6 +2321,9 @@ input.pmpro_btn-cancel {
 
 .card-sidebar {
   padding-right: 3%; }
+  @media (max-width: 641px) {
+    .card-sidebar {
+      display: none; } }
 
 .card-sidebar .cards-grid .card-item {
   width: 100%;

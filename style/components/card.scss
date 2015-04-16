@@ -192,6 +192,10 @@
 
 .card-sidebar {
 	padding-right: 3%;
+
+	@media ( max-width : 641px ) {
+		display: none;
+	}
 }
 
 
