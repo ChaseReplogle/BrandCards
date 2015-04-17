@@ -2365,12 +2365,9 @@ input.pmpro_btn-cancel {
   right: 0; }
 
 .card-single-wrapper .card-link-a {
-  height: 0px;
-  width: 0px;
-  top: inherit;
-  bottom: inherit;
-  left: inherit;
-  right: inherit; }
+  pointer-events: none;
+  cursor: default;
+  z-index: -9999; }
 
 .card-link .image {
   position: absolute;
