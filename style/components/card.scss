@@ -248,6 +248,11 @@
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
+.card-single-wrapper .card-link-a {
+	pointer-events: none;
+   	cursor: default;
+}
+
 .card-link .image {
 	position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
