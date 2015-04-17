@@ -249,8 +249,8 @@
 }
 
 .card-single-wrapper .card-link-a {
-	pointer-events: none;
-   	cursor: default;
+	height: 0px;
+	width: 0px;
 }
 
 .card-link .image {
