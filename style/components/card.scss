@@ -251,6 +251,10 @@
 .card-single-wrapper .card-link-a {
 	pointer-events: none;
    	cursor: default;
+
+   	div {
+   		pointer-events: all;
+   	}
 }
 
 .card-link .image {
