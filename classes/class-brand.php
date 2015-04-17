@@ -47,7 +47,7 @@ function brand_cover($site, $role) { ?>
 						</div>
 
 					<?php }  else { ?>
-						<div class="brand-cover brand-cover-logo" style="background-color: #ffffff;">
+						<div class="brand-cover brand-cover-logo" style="background-color: #ffffff; background: <?php echo get_post_meta($detail->ID, 'cover_color', true); ?>;">
 							<div class="card-inner">
 								<img id="image" src="<?php network_site_url(); ?>/wp-content/themes/brandcards/images/white.png"  class="card-image" />
 							</div>
