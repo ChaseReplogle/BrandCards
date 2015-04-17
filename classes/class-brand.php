@@ -34,7 +34,7 @@ function brand_cover($site, $role) { ?>
 
 					<?php if ($cover_logo) { ?>
 
-						<div class="brand-cover brand-cover-logo" style="background: #<?php echo get_post_meta($detail->ID, 'cover_color', true); ?>;">
+						<div class="brand-cover brand-cover-logo" style="background: <?php echo get_post_meta($detail->ID, 'cover_color', true); ?>;">
 							<div class="card-inner">
 								<img id="image" src="<?php echo $cover_logo ?>" class="card-image" />
 							</div>
