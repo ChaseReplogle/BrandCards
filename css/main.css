@@ -2478,7 +2478,8 @@ input.pmpro_btn-cancel {
 .card-link.palettes {
   background: white; }
   .card-link.palettes .palette {
-    padding: 10% 10%; }
+    padding: 10% 10%;
+    padding-bottom: 60%; }
   .card-link.palettes .palette-item {
     width: 19%;
     margin-left: 1%;
