@@ -251,10 +251,11 @@
 .card-single-wrapper .card-link-a {
 	pointer-events: none;
    	cursor: default;
+   	top: inherit;
+  bottom: inherit;
+  left: inherit;
+  right: inherit;
 
-   	div {
-   		pointer-events: all;
-   	}
 }
 
 .card-link .image {

@@ -2366,9 +2366,11 @@ input.pmpro_btn-cancel {
 
 .card-single-wrapper .card-link-a {
   pointer-events: none;
-  cursor: default; }
-  .card-single-wrapper .card-link-a div {
-    pointer-events: all; }
+  cursor: default;
+  top: inherit;
+  bottom: inherit;
+  left: inherit;
+  right: inherit; }
 
 .card-link .image {
   position: absolute;
