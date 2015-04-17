@@ -2366,8 +2366,7 @@ input.pmpro_btn-cancel {
 
 .card-single-wrapper .card-link-a {
   pointer-events: none;
-  cursor: default;
-  z-index: -9999; }
+  cursor: default; }
 
 .card-link .image {
   position: absolute;
