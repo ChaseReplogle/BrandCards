@@ -258,7 +258,7 @@
 
 	h4 {
 		color: $green;
-		font-size: 13px;
+		font-size: 15px;
 		margin-bottom: 30px;
 	}
 
@@ -287,6 +287,12 @@
 
 		p.secondary {
 			padding-top: 12px;
+		}
+
+		.activity-label {
+			p {
+				color: $gray-mid;
+			}
 		}
 
 		.activity-avatar {

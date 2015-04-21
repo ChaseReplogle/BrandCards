@@ -3553,7 +3553,7 @@ form.pmpro_form .hidden {
   padding-top: 40px; }
   .activity h4 {
     color: #80CA9C;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 30px; }
   .activity .activity-item {
     padding: 0px 0px; }
@@ -3575,6 +3575,8 @@ form.pmpro_form .hidden {
       width: 50px; }
     .activity .activity-item p.secondary {
       padding-top: 12px; }
+    .activity .activity-item .activity-label p {
+      color: #CECECE; }
     .activity .activity-item .activity-content {
       margin-left: 1%; }
       .activity .activity-item .activity-content .activity-content-main {
