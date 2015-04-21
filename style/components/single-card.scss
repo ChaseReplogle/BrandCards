@@ -265,13 +265,32 @@
 	.activity-item {
 		padding: 0px 0px;
 
+		&:before {
+			content: ".";
+			display: inline-block;
+			background: $gray-mid;
+			position: absolute;
+			top: 0; bottom: 0;
+			left: 11%;
+			margin-top: -10px;
+			z-index: -1;
+			height: 120%;
+			width: 1px;
+			font-size: 0px;
+			color: $gray-lightest;
+		}
+
 
 		img {
 			width: 50px;
 		}
 
 		p.secondary {
-			padding-top: 10px;
+			padding-top: 12px;
+		}
+
+		.activity-avatar {
+
 		}
 
 		.activity-content {
@@ -285,6 +304,7 @@
 				p {
 					font-size: 13px;
 					color: darken($gray-mid, 10%);
+					margin-top: 5px;
 				}
 			}
 		}

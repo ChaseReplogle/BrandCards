@@ -3557,17 +3557,32 @@ form.pmpro_form .hidden {
     margin-bottom: 30px; }
   .activity .activity-item {
     padding: 0px 0px; }
+    .activity .activity-item:before {
+      content: ".";
+      display: inline-block;
+      background: #CECECE;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 11%;
+      margin-top: -10px;
+      z-index: -1;
+      height: 120%;
+      width: 1px;
+      font-size: 0px;
+      color: #F9F9F9; }
     .activity .activity-item img {
       width: 50px; }
     .activity .activity-item p.secondary {
-      padding-top: 10px; }
+      padding-top: 12px; }
     .activity .activity-item .activity-content {
       margin-left: 1%; }
       .activity .activity-item .activity-content .activity-content-main {
         font-size: 14px; }
       .activity .activity-item .activity-content .activity-content-note p {
         font-size: 13px;
-        color: #b4b4b4; }
+        color: #b4b4b4;
+        margin-top: 5px; }
     .activity .activity-item .activity-content-time p {
       text-align: right;
       color: #b4b4b4; }
