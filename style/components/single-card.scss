@@ -248,3 +248,54 @@
 		}
 	}
 }
+
+
+
+
+
+.activity {
+	padding-top: 40px;
+
+	h4 {
+		color: $green;
+		font-size: 13px;
+		margin-bottom: 30px;
+	}
+
+	.activity-item {
+		padding: 0px 0px;
+
+
+		img {
+			width: 50px;
+		}
+
+		p.secondary {
+			padding-top: 10px;
+		}
+
+		.activity-content {
+			margin-left: 1%;
+
+			.activity-content-main {
+				font-size: 14px;
+			}
+
+			.activity-content-note {
+				p {
+					font-size: 13px;
+					color: darken($gray-mid, 10%);
+				}
+			}
+		}
+
+
+		.activity-content-time {
+			p {
+				text-align: right;
+				color: darken($gray-mid, 10%);
+			}
+		}
+	}
+
+}
