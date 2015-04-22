@@ -260,6 +260,11 @@
 		color: $green;
 		font-size: 15px;
 		margin-bottom: 30px;
+
+		@media ( max-width : 641px ) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	.activity-item {
@@ -278,6 +283,11 @@
 			width: 1px;
 			font-size: 0px;
 			color: $gray-lightest;
+
+			@media ( max-width : 641px ) {
+				left: 50%;
+				background: $gray-light;
+			}
 		}
 
 
@@ -292,11 +302,20 @@
 		.activity-label {
 			p {
 				color: $gray-mid;
+
+				@media ( max-width : 641px ) {
+					width: 100%;
+					text-align: center;
+				}
 			}
 		}
 
 		.activity-avatar {
-
+			@media ( max-width : 641px ) {
+				width: 100%;
+				text-align: center;
+				margin-top: 10px;
+			}
 		}
 
 		.activity-content {
@@ -304,6 +323,11 @@
 
 			.activity-content-main {
 				font-size: 14px;
+
+				@media ( max-width : 641px ) {
+					width: 100%;
+					text-align: center;
+				}
 			}
 
 			.activity-content-note {
@@ -311,6 +335,11 @@
 					font-size: 13px;
 					color: darken($gray-mid, 10%);
 					margin-top: 5px;
+
+					@media ( max-width : 641px ) {
+						width: 100%;
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -320,6 +349,11 @@
 			p {
 				text-align: right;
 				color: darken($gray-mid, 10%);
+
+				@media ( max-width : 641px ) {
+					width: 100%;
+					text-align: center;
+				}
 			}
 		}
 	}
