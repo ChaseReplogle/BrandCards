@@ -261,7 +261,7 @@
 		font-size: 15px;
 		margin-bottom: 30px;
 
-		@media ( max-width : 641px ) {
+		@media ( max-width : 900px ) {
 			width: 100%;
 			text-align: center;
 		}
@@ -284,7 +284,7 @@
 			font-size: 0px;
 			color: $gray-lightest;
 
-			@media ( max-width : 641px ) {
+			@media ( max-width : 900px ) {
 				left: 50%;
 				background: $gray-light;
 			}
@@ -300,10 +300,14 @@
 		}
 
 		.activity-label {
+			@media ( max-width : 900px ) {
+				width: 100%;
+			}
+
 			p {
 				color: $gray-mid;
 
-				@media ( max-width : 641px ) {
+				@media ( max-width : 900px ) {
 					width: 100%;
 					text-align: center;
 				}
@@ -311,7 +315,7 @@
 		}
 
 		.activity-avatar {
-			@media ( max-width : 641px ) {
+			@media ( max-width : 900px ) {
 				width: 100%;
 				text-align: center;
 				margin-top: 10px;
@@ -319,24 +323,31 @@
 		}
 
 		.activity-content {
+			@media ( max-width : 900px ) {
+				width: 100%;
+			}
 			margin-left: 1%;
 
 			.activity-content-main {
 				font-size: 14px;
 
-				@media ( max-width : 641px ) {
+				@media ( max-width : 900px ) {
 					width: 100%;
 					text-align: center;
 				}
 			}
 
 			.activity-content-note {
+				@media ( max-width : 900px ) {
+					width: 100%;
+				}
+
 				p {
 					font-size: 13px;
 					color: darken($gray-mid, 10%);
 					margin-top: 5px;
 
-					@media ( max-width : 641px ) {
+					@media ( max-width : 900px ) {
 						width: 100%;
 						text-align: center;
 					}
@@ -346,11 +357,15 @@
 
 
 		.activity-content-time {
+			@media ( max-width : 900px ) {
+				width: 100%;
+			}
+
 			p {
 				text-align: right;
 				color: darken($gray-mid, 10%);
 
-				@media ( max-width : 641px ) {
+				@media ( max-width : 900px ) {
 					width: 100%;
 					text-align: center;
 				}

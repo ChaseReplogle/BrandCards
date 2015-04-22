@@ -3555,7 +3555,7 @@ form.pmpro_form .hidden {
     color: #80CA9C;
     font-size: 15px;
     margin-bottom: 30px; }
-    @media (max-width: 641px) {
+    @media (max-width: 900px) {
       .activity h4 {
         width: 100%;
         text-align: center; } }
@@ -3575,7 +3575,7 @@ form.pmpro_form .hidden {
       width: 1px;
       font-size: 0px;
       color: #F9F9F9; }
-      @media (max-width: 641px) {
+      @media (max-width: 900px) {
         .activity .activity-item:before {
           left: 50%;
           background: #EDEDED; } }
@@ -3583,37 +3583,49 @@ form.pmpro_form .hidden {
       width: 50px; }
     .activity .activity-item p.secondary {
       padding-top: 12px; }
+    @media (max-width: 900px) {
+      .activity .activity-item .activity-label {
+        width: 100%; } }
     .activity .activity-item .activity-label p {
       color: #CECECE; }
-      @media (max-width: 641px) {
+      @media (max-width: 900px) {
         .activity .activity-item .activity-label p {
           width: 100%;
           text-align: center; } }
-    @media (max-width: 641px) {
+    @media (max-width: 900px) {
       .activity .activity-item .activity-avatar {
         width: 100%;
         text-align: center;
         margin-top: 10px; } }
     .activity .activity-item .activity-content {
       margin-left: 1%; }
+      @media (max-width: 900px) {
+        .activity .activity-item .activity-content {
+          width: 100%; } }
       .activity .activity-item .activity-content .activity-content-main {
         font-size: 14px; }
-        @media (max-width: 641px) {
+        @media (max-width: 900px) {
           .activity .activity-item .activity-content .activity-content-main {
             width: 100%;
             text-align: center; } }
+      @media (max-width: 900px) {
+        .activity .activity-item .activity-content .activity-content-note {
+          width: 100%; } }
       .activity .activity-item .activity-content .activity-content-note p {
         font-size: 13px;
         color: #b4b4b4;
         margin-top: 5px; }
-        @media (max-width: 641px) {
+        @media (max-width: 900px) {
           .activity .activity-item .activity-content .activity-content-note p {
             width: 100%;
             text-align: center; } }
+    @media (max-width: 900px) {
+      .activity .activity-item .activity-content-time {
+        width: 100%; } }
     .activity .activity-item .activity-content-time p {
       text-align: right;
       color: #b4b4b4; }
-      @media (max-width: 641px) {
+      @media (max-width: 900px) {
         .activity .activity-item .activity-content-time p {
           width: 100%;
           text-align: center; } }
