@@ -3618,7 +3618,7 @@ form.pmpro_form .hidden {
           width: 100%; } }
       .activity .activity-item .activity-content .activity-content-note p {
         font-size: 13px;
-        color: #CECECE;
+        color: #b4b4b4;
         margin-top: 5px; }
         @media (max-width: 900px) {
           .activity .activity-item .activity-content .activity-content-note p {
@@ -3629,7 +3629,7 @@ form.pmpro_form .hidden {
         width: 100%; } }
     .activity .activity-item .activity-content-time p {
       text-align: right;
-      color: #b4b4b4; }
+      color: #CECECE; }
       @media (max-width: 900px) {
         .activity .activity-item .activity-content-time p {
           width: 100%;

@@ -352,7 +352,7 @@
 
 				p {
 					font-size: 13px;
-					color: $gray-mid;
+					color: darken($gray-mid, 10%);
 					margin-top: 5px;
 
 					@media ( max-width : 900px ) {
@@ -371,7 +371,7 @@
 
 			p {
 				text-align: right;
-				color: darken($gray-mid, 10%);
+				color: $gray-mid;
 
 				@media ( max-width : 900px ) {
 					width: 100%;
