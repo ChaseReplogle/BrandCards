@@ -3555,9 +3555,9 @@ form.pmpro_form .hidden {
 .activity {
   padding-top: 0px; }
   .activity h4 {
-    color: #80CA9C;
-    font-size: 15px;
-    margin-bottom: 30px; }
+    color: #858585;
+    font-size: 14px;
+    margin-bottom: 15px; }
     @media (max-width: 900px) {
       .activity h4 {
         width: 100%;
