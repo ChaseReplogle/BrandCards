@@ -87,6 +87,10 @@
 		margin-bottom: 15px;
 		margin-top: 5px;
 
+		@media ( max-width : 641px ) {
+			display: none;
+		}
+
 		.nav-previous {
 			float: left;
 			width: 20%;

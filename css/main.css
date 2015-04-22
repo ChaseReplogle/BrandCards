@@ -2997,7 +2997,7 @@ input.pmpro_btn-cancel {
     line-height: 16px;
     font-size: 13px;
     position: absolute;
-    top: 45%;
+    top: 42%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -3441,6 +3441,9 @@ form.pmpro_form .hidden {
 .single-cards #arrow-nav {
   margin-bottom: 15px;
   margin-top: 5px; }
+  @media (max-width: 641px) {
+    .single-cards #arrow-nav {
+      display: none; } }
   .single-cards #arrow-nav .nav-previous {
     float: left;
     width: 20%;
