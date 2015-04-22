@@ -3565,7 +3565,7 @@ form.pmpro_form .hidden {
   .activity .activity-item {
     padding: 0px 0px; }
     .activity .activity-item a {
-      color: #b4b4b4; }
+      color: #CECECE; }
     .activity .activity-item:before {
       content: ".";
       display: inline-block;
@@ -3618,7 +3618,7 @@ form.pmpro_form .hidden {
           width: 100%; } }
       .activity .activity-item .activity-content .activity-content-note p {
         font-size: 13px;
-        color: #b4b4b4;
+        color: #CECECE;
         margin-top: 5px; }
         @media (max-width: 900px) {
           .activity .activity-item .activity-content .activity-content-note p {
