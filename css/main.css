@@ -3564,6 +3564,8 @@ form.pmpro_form .hidden {
         text-align: center; } }
   .activity .activity-item {
     padding: 0px 0px; }
+    .activity .activity-item a {
+      color: #b4b4b4; }
     .activity .activity-item:before {
       content: ".";
       display: inline-block;

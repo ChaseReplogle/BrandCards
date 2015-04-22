@@ -274,6 +274,10 @@
 	.activity-item {
 		padding: 0px 0px;
 
+		a {
+			color: darken($gray-mid, 10%);
+		}
+
 		&:before {
 			content: ".";
 			display: inline-block;
