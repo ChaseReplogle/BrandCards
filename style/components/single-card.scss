@@ -272,10 +272,14 @@
 	}
 
 	.activity-item {
-		padding: 0px 0px;
+		padding: 0px;
 
 		a {
 			color: $gray-mid;
+
+			&:hover {
+				color: $gray;
+			}
 		}
 
 		&:before {

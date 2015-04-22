@@ -3563,9 +3563,11 @@ form.pmpro_form .hidden {
         width: 100%;
         text-align: center; } }
   .activity .activity-item {
-    padding: 0px 0px; }
+    padding: 0px; }
     .activity .activity-item a {
       color: #CECECE; }
+      .activity .activity-item a:hover {
+        color: #858585; }
     .activity .activity-item:before {
       content: ".";
       display: inline-block;
