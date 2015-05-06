@@ -2358,11 +2358,7 @@ input.pmpro_btn-cancel {
   border: 1px solid #EDEDED; }
 
 .card-link-a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+  position: relative; }
 
 .card-single-wrapper .card-link-a {
   pointer-events: none;
