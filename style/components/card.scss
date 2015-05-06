@@ -243,8 +243,12 @@
     border: 1px solid $gray-light;
 }
 
+.card-wrapper {
+	position: relative;
+}
+
 .card-link-a {
-    position: relative;
+    position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
