@@ -3520,6 +3520,7 @@ form.pmpro_form .hidden {
   border: 1px solid #EDEDED;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 30px;
   padding: 30px; }
   .single-cards .card-files h3 {
     color: #80CA9C;
@@ -3551,6 +3552,18 @@ form.pmpro_form .hidden {
   .single-cards .no-files a {
     font-size: 12px;
     color: #80CA9C; }
+
+.activity-toggle {
+  color: #CECECE;
+  font-size: 14px;
+  margin-bottom: 15px; }
+  @media (max-width: 900px) {
+    .activity-toggle {
+      width: 100%;
+      text-align: center; } }
+
+a.activity-toggle:visited {
+  color: #CECECE !important; }
 
 .activity {
   padding-top: 0px; }
