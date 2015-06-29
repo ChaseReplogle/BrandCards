@@ -810,12 +810,12 @@
 		line-height: auto;
 		margin: 0px;
 		margin-bottom: 0%;
-		font-size: 50px;
-  		font-size: 5vm;
-  		font-size: 5vmin;
-  		line-height: 50px;
-  		line-height: 5vm;
-  		line-height: 5vmin;
+		font-size: 70px;
+  		font-size: 10vm;
+  		font-size: 10vmin;
+  		line-height: 70px;
+  		line-height: 10vm;
+  		line-height: 10vmin;
 
   		@media ( max-width : 641px ) {
 			font-size: 200px;
@@ -830,11 +830,11 @@
 	h4 {
 		color: $gray;
 		font-size: 4.5px;
-  		font-size: .45vm;
-  		font-size: .45vmin;
+  		font-size: 1vm;
+  		font-size: 1vmin;
   		line-height: 4px;
-  		line-height: .4vm;
-  		line-height: .4vmin;
+  		line-height: 1vm;
+  		line-height: 1vmin;
 		margin-bottom: 2px;
 		margin-bottom: .2vm;
   		margin-bottom: .2vmin;
@@ -935,8 +935,8 @@
 			}
 
 			h2 {
-				font-size: 200px;
-				line-height: 200px;
+				font-size: 300px;
+				line-height: 300px;
 				display: block;
 
 				@media ( max-width : 1000px ) {
@@ -947,7 +947,7 @@
 			}
 
 			h3 {
-				font-size: 18px;
+				font-size: 22px;
 				line-height: 22px;
 				display: block;
 				margin-bottom: 15px;
@@ -960,7 +960,7 @@
 			}
 
 			h4 {
-				font-size: 18px;
+				font-size: 22px;
 				line-height: 22px;
 				display: block;
 
