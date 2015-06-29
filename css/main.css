@@ -2343,7 +2343,8 @@ input.pmpro_btn-cancel {
 .card-sidebar .cards-grid .edit-icon {
   display: none !important; }
 .card-sidebar .new-card {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 15px; }
 
 .card-link-wrapper {
   position: relative;
