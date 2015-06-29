@@ -2323,7 +2323,8 @@ input.pmpro_btn-cancel {
         margin-left: 0%; } }
 
 .card-sidebar {
-  padding-right: 3%; }
+  padding-right: 3%;
+  border-bottom: 1px solid #EDEDED; }
   @media (max-width: 641px) {
     .card-sidebar {
       display: none; } }
