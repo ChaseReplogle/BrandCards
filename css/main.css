@@ -1257,7 +1257,7 @@ span.description {
 .gform_wrapper .gform_body .tabbed input {
   margin-left: -99999px; }
   .gform_wrapper .gform_body .tabbed input:checked + label {
-    background: #fff; }
+    background: #fff !important; }
 .gform_wrapper .gform_body .tabbed li {
   width: 50%;
   float: left; }
@@ -1265,7 +1265,7 @@ span.description {
     margin: 0px;
     border: 1px solid #DADADA;
     background: #F9F9F9;
-    padding: 30px 0px;
+    padding: 30px 0px !important;
     text-align: center;
     background: none !important;
     width: 100%; }
