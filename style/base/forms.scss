@@ -172,6 +172,8 @@ span.description {
 			background: $gray_lightest;
 			padding: 30px 0px;
 			text-align: center;
+			background: none;
+			width: 100%;
 		}
 
 			&:last-child label {
