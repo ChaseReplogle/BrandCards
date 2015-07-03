@@ -104,7 +104,8 @@ span.description {
 }
 
 
-.gform_wrapper.gf_browser_gecko .gform_body .gfield_checkbox li input[type="checkbox"], .gform_wrapper.gf_browser_chrome .gform_body .gfield_checkbox li input[type="checkbox"] {
+.gform_wrapper.gf_browser_gecko .gform_body .gfield_checkbox li input[type="checkbox"], .gform_wrapper.gf_browser_chrome .gform_body .gfield_checkbox li input[type="checkbox"],
+.gform_wrapper.gf_browser_gecko .gform_body .gfield_radio li input[type="radio"], .gform_wrapper.gf_browser_chrome .gform_body .gfield_radio li input[type="radio"] {
   width: 28px;
   visibility: hidden;
   height: 0px;
@@ -114,7 +115,8 @@ span.description {
   margin-left: -99999999px;
 }
 
-.gform_wrapper .gfield_checkbox li input[type="checkbox"]:not(old) + label {
+.gform_wrapper .gfield_checkbox li input[type="checkbox"]:not(old) + label,
+.gform_wrapper .gfield_radio li input[type="radio"]:not(old) + label {
   display: inline-block;
   margin-left: 0px;
   padding-left: 48px;
@@ -123,7 +125,8 @@ span.description {
   font-size: 13px;
 }
 
-.gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:not(old):checked + label {
+.gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:not(old):checked + label,
+.gform_wrapper ul.gfield_radio li input[type="radio"]:not(old):checked + label {
 	font-weight: 400;
   	background: url('../images/checkedbox.svg') no-repeat 0 0;
 }
