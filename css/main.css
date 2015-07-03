@@ -1267,7 +1267,7 @@ span.description {
     background: #F9F9F9;
     padding: 30px 0px;
     text-align: center;
-    background: none;
+    background: none !important;
     width: 100%; }
   .gform_wrapper .gform_body .tabbed li:last-child label {
     border-left: 0px; }
