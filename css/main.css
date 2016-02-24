@@ -1901,6 +1901,9 @@ label[for="simple-local-avatar"],
 form.pmpro_form .pmpro_message, .login p.message {
   margin-bottom: 15px; }
 
+form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
+  min-width: 100%; }
+
 #pmpro_processing_message p {
   text-align: center;
   margin-top: 20px; }
