@@ -254,7 +254,7 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 }
 
 
-.discount_code_button {
+#discount_code_button {
 	width: 100%;
 
 	&:hover {
@@ -263,6 +263,6 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 	}
 }
 
-.other_discount_code_p {
+#other_discount_code_p {
 	display: none;
 }

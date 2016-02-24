@@ -3413,13 +3413,13 @@ form.pmpro_form .hidden {
 form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
   min-width: 100%; }
 
-.discount_code_button {
+#discount_code_button {
   width: 100%; }
-  .discount_code_button:hover {
+  #discount_code_button:hover {
     box-shadow: 0px;
     padding: 15px; }
 
-.other_discount_code_p {
+#other_discount_code_p {
   display: none; }
 
 .single-cards #content {
