@@ -810,7 +810,7 @@
 				<?php echo wpautop(pmpro_getLevelExpiration($pmpro_level)); ?></div>
 				<p class="secondary">This will be billed monthly until you cancel.</p>
 
-				<a href="#" class="button button-secondary button-block">Choose A Different Plan</a>
+				<a href="/membership-account/membership-levels/" class="button button-secondary button-block">Choose A Different Plan</a>
 			</div>
 
 
