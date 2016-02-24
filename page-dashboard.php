@@ -35,7 +35,7 @@ get_header(); ?>
 						      <?php } else { ?>
 								<p>Hello, Let's build some brands.</p>
 						      <?php } ?>
-						      <p class="secondary lighten">Learn: <a class="secondary" href="#">Understanding file formats...</a></p>
+						      <p class="secondary lighten">Learn: <a class="secondary" href="#">Understanding file formats... (coming soon)</a></p>
 						    </div>
 
 							<div class="col span_6">
