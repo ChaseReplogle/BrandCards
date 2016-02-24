@@ -1628,11 +1628,13 @@ li > ul, li > ol {
  */
 .avatar {
   border-radius: 500px;
-  border: 1px solid #EDEDED;
-  max-height: 50px;
-  min-height: 50px; }
+  border: 1px solid #EDEDED; }
   .avatar:hover {
     opacity: .8; }
+
+.user-item img {
+  max-height: 50px;
+  min-height: 50px; }
 
 /*
  * Removes options from the edit profile page.
