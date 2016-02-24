@@ -1520,6 +1520,15 @@ li > ul, li > ol {
   float: left;
   padding-top: 6px; }
 
+.branding_link {
+  text-decoration: none;
+  position: relative; }
+  .branding_link span {
+    font-size: 12px;
+    position: absolute;
+    right: -180px;
+    color: #80CA9C; }
+
 .main-nav .avatar {
   float: right;
   margin: 3px 0px 0px 15px; }
