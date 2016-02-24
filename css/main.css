@@ -3419,6 +3419,9 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
     box-shadow: 0px;
     padding: 15px; }
 
+.other_discount_code_p {
+  display: none; }
+
 .single-cards #content {
   margin-top: 25px; }
 .single-cards .card-item {
