@@ -266,3 +266,20 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 #other_discount_code_p {
 	display: none;
 }
+
+
+
+.tml-submit-wrap {
+	#wp-submit {
+		width: 100%;
+	}
+}
+
+.tml .tml-action-links li {
+	border: 0px;
+}
+
+.tml .message {
+	line-height: 20px;
+	color: black;
+}
