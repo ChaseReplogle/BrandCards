@@ -123,3 +123,18 @@ require get_template_directory() . '/functions/functions-upload-avatar.php';
 require get_template_directory() . '/classes/class-account.php';
 require get_template_directory() . '/classes/class-brand.php';
 
+
+
+
+
+function wpse101952_redirect() {
+  global $post;
+
+    if( is_page('register') ) { //examples: is_home() or is_single() or is_user_logged_in() or isset($_SESSION['some_var'])
+
+        wp_redirect( 'https://brandcardsapp.com/membership-account/membership-levels/' );
+
+        exit();
+    }
+}
+add_action( 'template_redirect', 'wpse101952_redirect' );
