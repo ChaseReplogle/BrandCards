@@ -1904,6 +1904,12 @@ form.pmpro_form .pmpro_message, .login p.message {
 form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
   min-width: 100%; }
 
+.discount_code_button {
+  width: 100%; }
+  .discount_code_button:hover {
+    box-shadow: 0px;
+    padding: 15px; }
+
 #pmpro_processing_message p {
   text-align: center;
   margin-top: 20px; }
