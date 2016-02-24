@@ -249,3 +249,6 @@ form.pmpro_form .hidden {
 	}
 }
 
+form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
+	min-width: 100%;
+}

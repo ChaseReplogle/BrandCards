@@ -3416,6 +3416,9 @@ form.pmpro_form .hidden {
 .page-template-page-brand-details .gform_wrapper .gform_body .color_picker_field input[type="text"].large {
   width: 90%; }
 
+form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select {
+  min-width: 100%; }
+
 .single-cards #content {
   margin-top: 25px; }
 .single-cards .card-item {
