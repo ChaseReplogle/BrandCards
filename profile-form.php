@@ -48,10 +48,11 @@ Theme My Login will always look in your theme's directory first, before using th
 			if ( $show_password_fields ) :
 			?>
 
-			<label for="pass1"><?php _e( 'New Password' ); ?></label>
-			<input type="password" name="pass1" id="pass1" size="16" value="" autocomplete="off" />
-			<label for="pass2"><?php _e( 'Retype Password' ); ?></label>
-			<input type="password" name="pass2" id="pass2" size="16" value="" autocomplete="off" />
+			<label for="pass1">New Password</label>
+			<input type="text" name="pass1" id="pass1" size="16" value="" autocomplete="off" />
+
+			<label for="pass2">Retype Password</label>
+			<input type="text" name="pass2" id="pass2" size="16" value="" autocomplete="off" />
 
 				<div id="pass-strength-result"><?php _e( 'Strength indicator', 'theme-my-login' ); ?></div>
 				<p class="description indicator-hint"><?php _e( 'Hint: The password should be at least seven characters long. To make it stronger, use upper and lower case letters, numbers and symbols like ! " ? $ % ^ &amp; ).' ); ?></p>
