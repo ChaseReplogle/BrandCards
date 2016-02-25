@@ -38,7 +38,8 @@ Theme My Login will always look in your theme's directory first, before using th
 			<label for="email"><?php _e( 'E-mail' ); ?> <span class="description"></span></label>
 			<input type="text" name="email" id="email" value="<?php echo esc_attr( $profileuser->user_email ); ?>" class="regular-text" />
 
-			<input type="hidden" name="nickname" id="nickname" value="<?php echo esc_attr( $profileuser->user_name ); ?>" class="regular-text" />
+			<label for="nickname"><?php _e( 'Nickname' ); ?> <span class="description"></span></label>
+			<input type="text" name="nickname" id="nickname" value="<?php echo esc_attr( $profileuser->user_name ); ?>" class="regular-text" />
 
 
 			<hr>
