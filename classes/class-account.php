@@ -192,7 +192,6 @@ function remove_user_fields(){
                  '#aim', // AOL instant messenger
                  '#yim', // Yahoo messenger
                  '#jabber', // Jabber
-                 '#nickname',
                  '#display_name',
                  '#user_login',
                  '#simple-local-avatar-ratings']; // User bio
