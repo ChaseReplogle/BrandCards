@@ -92,3 +92,51 @@ function invite_login($user_login) {
 
 }
 add_action('wp_login', 'invite_login');
+
+
+
+
+/**
+ * This function hooks into WordPress Load
+ *
+ * @param int    $user_id The ID of the user.
+ *
+ * @return action   Hadles adding invited users to blog if already logged in.
+ */
+function invite_already_login($user_login) {
+
+	if( isset($_GET['role']) && is_user_logged_in()) {
+		 $user = get_current_user_id();
+
+		$invite_blog_id = $_GET['id'];
+		$user_id = get_current_user_id();
+		$num_role = $_GET['role'];
+		$role = "";
+			if ($num_role == 1) {
+	    		$role = "editor";
+			} else {
+				$role = "subscriber";
+			}
+
+		add_user_to_blog($invite_blog_id, $user_id, $role);
+
+		$user_info = get_userdata($user_id);
+	    $invite_email = $user_info->user_email;
+
+		global $invite_email;
+	    global $switched;
+	    switch_to_blog($invite_blog_id);
+	   		$invites = get_posts( array(
+	   			'post_type'  => 'invites',
+	   			'meta_key'   => 'invite_email',
+	   			'meta_value' => $invite_email
+	   		) );
+	   		foreach ( $invites as $invite ) {
+	   			wp_delete_post( $invite->ID, true);
+	   		}
+	    restore_current_blog();
+
+	}
+
+}
+add_action('wp', 'invite_already_login');
