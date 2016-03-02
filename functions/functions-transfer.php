@@ -129,7 +129,7 @@ function transfer_logged_in($user_login) {
 
 	$transfer_id = $_GET['action'];
 
-	if( $action = 'transfer_ownership' && is_user_logged_in() ) {
+	if( $transfer_id = 'transfer_ownership' && is_user_logged_in() ) {
 		 $user = wp_get_current_user();
 
 		$transfer_id = $_GET['id'];
