@@ -121,14 +121,11 @@ add_action('wp_login', 'transfer_login');
 /**
  * This function hooks into Paid Mebership Pro Checkout:
  *
- * @param int    $user_id The ID of the user.
- *
- * @return action   Hadles adding invited users to blog upon checkout.
  */
 function transfer_logged_in() {
 
 
-	if(isset($_GET['action']) && $_GET['action'] === 'transfer_ownership' && is_user_logged_in() ) {
+	if(isset($_GET['action']) && $_GET['action'] == 'transfer_ownership' && is_user_logged_in() ) {
 
 		$transfer_id = $_GET['id'];
 		$user_id = get_current_user_id();
