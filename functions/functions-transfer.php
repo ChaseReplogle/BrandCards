@@ -129,7 +129,7 @@ function transfer_logged_in() {
 
 
 
-	if(isset($_GET['action']) && $_GET['action'] == 'transfer_ownership' && is_user_logged_in() ) {
+	if(isset($_GET['action']) && is_user_logged_in() ) {
 
 		$transfer_id = $_GET['id'];
 		$user_id = get_current_user_id();
