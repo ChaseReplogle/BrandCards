@@ -125,15 +125,14 @@ add_action('wp_login', 'transfer_login');
  *
  * @return action   Hadles adding invited users to blog upon checkout.
  */
-function transfer_logged_in($user_login) {
+function transfer_logged_in() {
 
 
 
 	if(isset($_GET['action']) && $_GET['action'] == 'transfer_ownership' && is_user_logged_in() ) {
-		$user = wp_get_current_user();
 
 		$transfer_id = $_GET['id'];
-		$user_id = $user->ID;
+		$user_id = get_current_user_id();
 		$role = "administrator";
 
 		add_user_to_blog($transfer_id, $user_id, $role);
