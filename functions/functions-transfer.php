@@ -122,10 +122,8 @@ add_action('wp_login', 'transfer_login');
  * This function hooks into Paid Mebership Pro Checkout:
  *
  */
-function transfer_logged_in() {
 
-
-	if(isset($_GET['action']) && $_GET['action'] == 'transfer_ownership' ) {
+	if(isset($_GET['action']) && $_GET['action'] == 'transfer_ownership' && is_user_logged_in() ) {
 
 		$transfer_id = $_GET['id'];
 		$user_id = get_current_user_id();
@@ -164,7 +162,4 @@ function transfer_logged_in() {
 			    restore_current_blog();
 
 	}
-
-}
-add_action('wp', 'transfer_logged_in');
 
