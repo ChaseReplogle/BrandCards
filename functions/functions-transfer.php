@@ -170,5 +170,5 @@ function transfer_logged_in() {
 	}
 
 }
-add_action('wp', 'transfer_logged_in');
+add_action('wp_loaded', 'transfer_logged_in');
 
