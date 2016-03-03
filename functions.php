@@ -138,3 +138,18 @@ function wpse101952_redirect() {
     }
 }
 add_action( 'template_redirect', 'wpse101952_redirect' );
+
+
+
+
+
+add_filter( 'll_intercom_custom_data', 'my_intercom_data' );
+
+function my_intercom_data( $custom ) {
+
+    $current_user = wp_get_current_user();
+    $custom['Membership'] = 'test';
+
+    return $custom;
+
+}
