@@ -106,7 +106,7 @@ function admin_blog_count($user_id) {
   $blogs = get_blogs_of_user( $user_id, false );
 
   // set up a counter
-  $count = -1;
+  $count = 0;
 
   // Set up foreach loop to go through the blogs.
     foreach ( $blogs as $blog_id => $blog ) {

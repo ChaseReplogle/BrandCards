@@ -161,7 +161,7 @@ add_action('wp_login', 'transfer_login');
 		  $blogs = get_blogs_of_user( $user_id, false );
 
 		  // set up a counter
-		  $count = -1;
+		  $count = 0;
 
 		  // Set up foreach loop to go through the blogs.
 		    foreach ( $blogs as $blog_id => $blog ) {
