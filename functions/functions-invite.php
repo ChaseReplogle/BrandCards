@@ -136,6 +136,8 @@ function invite_already_login($user_login) {
 	   		}
 	    restore_current_blog();
 
+	    wp_redirect( get_blog_details( $invite_blog_id )->path ); exit;
+
 	}
 
 }
