@@ -431,3 +431,29 @@ function level_four_login_redirect( $redirect_to, $request, $user )
     }
 }
 add_filter("login_redirect", "level_four_login_redirect", 10, 3);
+
+
+
+
+
+/**
+ * 12. Send custom roles to Intercom.
+ *
+ *
+ *
+ *
+ */
+
+add_filter( 'll_intercom_custom_data', 'my_intercom_data' );
+
+function my_intercom_data( $custom ) {
+
+    $current_user = wp_get_current_user();
+
+    if ( $membership = $current_user->membership_level->name ) {
+        $custom['Membership'] = $current_user->membership_level->name ;
+    }
+
+    return $custom;
+
+}
