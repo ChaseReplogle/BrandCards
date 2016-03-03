@@ -216,6 +216,8 @@ add_action('wp_login', 'transfer_login');
 						}
 
 				    restore_current_blog();
+		} else {
+			wp_redirect( '/need-room/?transfer_id='. $transfer_id  ); exit;
 		}
 
 	}
