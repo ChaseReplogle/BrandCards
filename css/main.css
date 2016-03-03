@@ -3117,6 +3117,14 @@ input.pmpro_btn-cancel {
       color: #CECECE;
       line-height: 11px;
       margin: 0px 0px 0px 10px; }
+    .user-column .user-item p.transfer_link a {
+      font-size: 13px;
+      color: #CECECE;
+      line-height: 11px;
+      display: block;
+      margin: 10px 0px 0px 10px; }
+      .user-column .user-item p.transfer_link a:hover {
+        color: #80CA9C; }
     .user-column .user-item .user-links {
       display: none; }
       .user-column .user-item .user-links p {

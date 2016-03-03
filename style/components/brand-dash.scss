@@ -250,6 +250,20 @@
 			margin: 0px 0px 0px 10px;
 		}
 
+		p.transfer_link {
+			a {
+				font-size: 13px;
+				color: $gray_mid;
+				line-height: 11px;
+				display: block;
+				margin: 10px 0px 0px 10px;
+
+				&:hover {
+					color: $green;
+				}
+			}
+		}
+
 		.user-links {
 			display: none;
 
