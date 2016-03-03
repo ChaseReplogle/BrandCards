@@ -210,6 +210,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/private.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6635,
+		"inputAbbreviatedPath": "\/images\/private.png",
+		"outputAbbreviatedPath": "\/images\/private.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/public.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7432,
+		"inputAbbreviatedPath": "\/images\/public.png",
+		"outputAbbreviatedPath": "\/images\/public.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/white.png": {
 		"fileType": 32768,
 		"ignore": 0,

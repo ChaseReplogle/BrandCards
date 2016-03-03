@@ -35,7 +35,7 @@
 	}
 
 	.creator-included {
-		margin-top: 30px;
+		margin-top: 15px;
 	}
 
 
@@ -50,6 +50,11 @@
 			&:hover {
 				color: $green;
 			}
+		}
+
+		img {
+			height: 12px;
+			width: 10px;
 		}
 	}
 

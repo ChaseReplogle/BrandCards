@@ -2968,7 +2968,7 @@ input.pmpro_btn-cancel {
       text-align: center;
       margin-top: 0px; } }
 .brand-dash-header .creator-included {
-  margin-top: 30px; }
+  margin-top: 15px; }
 .brand-dash-header p.secondary {
   color: #CECECE; }
   .brand-dash-header p.secondary a {
@@ -2976,6 +2976,9 @@ input.pmpro_btn-cancel {
     color: #CECECE; }
     .brand-dash-header p.secondary a:hover {
       color: #80CA9C; }
+  .brand-dash-header p.secondary img {
+    height: 12px;
+    width: 10px; }
 .brand-dash-header a {
   text-decoration: none; }
 .brand-dash-header h1 {
