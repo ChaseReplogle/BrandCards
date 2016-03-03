@@ -67,7 +67,7 @@ add_filter('show_admin_bar', '__return_false');
 function brandcards_scripts() {
 	wp_enqueue_style( 'brandcards-style', get_stylesheet_uri() );
 	$cache_buster = date("YmdHi", filemtime( get_template_directory_uri() . '/css/main.css'));
-	wp_enqueue_style( 'brandcards-style-main', get_template_directory_uri() . '/css/main.css',false, $cache_buster ,'all' );
+	wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css', array(), $cache_buster, 'all' );
 	wp_enqueue_style( 'open-sans-font', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' );
 	wp_enqueue_style( 'merriweather-font', 'https://fonts.googleapis.com/css?family=Merriweather:400,300,700' );
 
