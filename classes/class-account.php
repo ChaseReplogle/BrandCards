@@ -449,10 +449,7 @@ add_filter( 'll_intercom_custom_data', 'my_intercom_data' );
 function my_intercom_data( $custom ) {
 
     $current_user = wp_get_current_user();
-
-    if ($current_user ) {
-        $custom['Membership'] = $current_user->membership_level->name;
-    }
+    $custom['Membership'] = $current_user->membership_level->name;
 
     return $custom;
 
