@@ -1978,6 +1978,17 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
       font-size: 16px; }
 
 /*
+ * New Password Form
+ */
+#resetpassform .user-pass1-wrap p {
+  margin: 0px;
+  margin-bottom: -10px; }
+#resetpassform .user-pass1-wrap #pass-strength-result {
+  margin-top: 2px; }
+#resetpassform button, #resetpassform input[type="button"], #resetpassform input[type="reset"], #resetpassform input[type="submit"] {
+  padding: 20px 0px; }
+
+/*
  * Primary Button Styles
  */
 .button, button, input[type="reset"] {

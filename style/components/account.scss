@@ -454,3 +454,28 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 		}
 	}
 }
+
+
+
+
+
+/*
+ * New Password Form
+ */
+
+#resetpassform {
+	.user-pass1-wrap {
+		p {
+			margin: 0px;
+	    	margin-bottom: -10px;
+		}
+
+		#pass-strength-result {
+			margin-top: 2px;
+		}
+	}
+
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		padding: 20px 0px;
+	}
+}
