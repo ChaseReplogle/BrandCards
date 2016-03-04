@@ -3226,7 +3226,7 @@ input.pmpro_btn-cancel {
   .public_link_widget input::selection {
     background: #c8e8d4; }
   .public_link_widget input::-moz-selection {
-    background: #c8e8d4; }
+    background: #ff6666; }
 .public_link_widget .note {
   font-size: 11px;
   line-height: 15px;
