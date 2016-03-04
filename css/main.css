@@ -1980,12 +1980,12 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 /*
  * New Password Form
  */
-#resetpassform .user-pass1-wrap p {
+#resetpassform .user-pass1-wrap p, #lostpasswordform .user-pass1-wrap p {
   margin: 0px;
   margin-bottom: -10px; }
-#resetpassform .user-pass1-wrap #pass-strength-result {
+#resetpassform .user-pass1-wrap #pass-strength-result, #lostpasswordform .user-pass1-wrap #pass-strength-result {
   margin-top: 2px; }
-#resetpassform button, #resetpassform input[type="button"], #resetpassform input[type="reset"], #resetpassform input[type="submit"] {
+#resetpassform button, #resetpassform input[type="button"], #resetpassform input[type="reset"], #resetpassform input[type="submit"], #lostpasswordform button, #lostpasswordform input[type="button"], #lostpasswordform input[type="reset"], #lostpasswordform input[type="submit"] {
   padding: 20px 0px; }
 
 /*
