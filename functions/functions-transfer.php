@@ -81,37 +81,94 @@ function transfer_login($user_login) {
 		$user_id = $user->ID;
 		$role = "administrator";
 
-		add_user_to_blog($transfer_id, $user_id, $role);
 
-		$user_info = get_userdata($user_id);
-	    	$transfer_email = $user_info->user_email;
-	    	  global $transfer_email;
-	    	  global $switched;
-			    switch_to_blog($transfer_id);
-			   		$transfers = get_posts( array(
-			   			'post_type'  => 'transfers',
-			   			'meta_key'   => 'transfer_email',
-			   			'meta_value' => $transfer_email
-			   		) );
-			   		foreach ( $transfers as $transfer ) {
-			   			wp_delete_post( $transfer->ID, true);
-			   		}
+		  $creation_limit = '';
+		  $brand_limit = 1;
+		  $designer_limit = 5;
+		  $agency_limit = 10;
+		  $member_limit = 0;
 
-					$args = array(
-						'blog_id'      => $transfer_id,
-						'role'         => 'administrator',
-				 	);
+		  if(pmpro_hasMembershipLevel(1)) {
+		    $creation_limit = $brand_limit;
 
-					$admins = get_users( $args );
+		  } elseif(pmpro_hasMembershipLevel(2)) {
+		    $creation_limit = $designer_limit;
 
-					foreach ( $admins as $admin ) {
-						if($admin->ID == $user_id ) {
-							} else {
-								 wp_update_user( array( 'ID' => $admin->ID, 'role' => 'editor' ) );
-							}
-					}
+		  } elseif(pmpro_hasMembershipLevel(3)) {
+		    $creation_limit = $agency_limit;
 
-			    restore_current_blog();
+		  } elseif(pmpro_hasMembershipLevel(4)) {
+		    $creation_limit = $member_limit;
+		  }
+
+		   // Sets role to admin.
+		  $role = 'administrator';
+
+		  // Get ALL blogs for a given user by their ID.
+		  $blogs = get_blogs_of_user( $user_id, false );
+
+		  // set up a counter
+		  $count = 0;
+
+		  // Set up foreach loop to go through the blogs.
+		    foreach ( $blogs as $blog_id => $blog ) {
+
+		      // Add 1 to the counter for each site
+		      $count ++;
+
+		      // Get the user object for the user for this blog.
+		        $user = new WP_User( $user_id, '', $blog_id );
+
+		        // Remove this blog from the list if the user doesn't have the role for it.
+		        if ( ! in_array( $role, $user->roles ) ) {
+
+		          // Subtract 1 for each site that is removed
+		            --$count;
+		        }
+
+		    }
+
+		    $creation_count = $count;
+
+		if ($creation_limit > $creation_count) {
+
+			add_user_to_blog($transfer_id, $user_id, $role);
+
+			$user_info = get_userdata($user_id);
+		    	$transfer_email = $user_info->user_email;
+		    	  global $transfer_email;
+		    	  global $switched;
+				    switch_to_blog($transfer_id);
+				   		$transfers = get_posts( array(
+				   			'post_type'  => 'transfers',
+				   			'meta_key'   => 'transfer_email',
+				   			'meta_value' => $transfer_email
+				   		) );
+				   		foreach ( $transfers as $transfer ) {
+				   			wp_delete_post( $transfer->ID, true);
+				   		}
+
+						$args = array(
+							'blog_id'      => $transfer_id,
+							'role'         => 'administrator',
+					 	);
+
+						$admins = get_users( $args );
+
+						foreach ( $admins as $admin ) {
+							if($admin->ID == $user_id ) {
+								} else {
+									 wp_update_user( array( 'ID' => $admin->ID, 'role' => 'editor' ) );
+								}
+						}
+
+				    restore_current_blog();
+
+		} elseif (pmpro_hasMembershipLevel('Member', $user_id))  {
+			wp_redirect( '/membership-account/membership-checkout/?level=1&transfer_id='. $transfer_id  ); exit;
+		} else  {
+			wp_redirect( '/need-room/?transfer_id='. $transfer_id  ); exit;
+		}
 
 	}
 
@@ -217,6 +274,9 @@ add_action('wp_login', 'transfer_login');
 
 				    restore_current_blog();
 				    wp_redirect( '/dashboard'  ); exit;
+
+		} elseif (pmpro_hasMembershipLevel('Member', $user_id))  {
+			wp_redirect( '/membership-account/membership-checkout/?level=1&transfer_id='. $transfer_id  ); exit;
 		} else  {
 			wp_redirect( '/need-room/?transfer_id='. $transfer_id  ); exit;
 		}
