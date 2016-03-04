@@ -3209,7 +3209,9 @@ input.pmpro_btn-cancel {
 .public_link_widget .user-title {
   margin-top: 20px; }
   .public_link_widget .user-title img {
-    float: right; }
+    float: right;
+    height: 15px;
+    width: 14px; }
 .public_link_widget input {
   font-size: 13px;
   padding: 5px 10px;
