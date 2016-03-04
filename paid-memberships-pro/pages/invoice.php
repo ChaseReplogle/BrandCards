@@ -54,8 +54,8 @@
 					<div class="col span_12">
 						<div class="brandcards-address">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" width="180px" class="branding" /><br />
-							2023 S Saratoga Ave<br />
-							Springfield, MO 65804 USA<br />
+							405 N Jefferson<br />
+							Springfield, MO 65806 USA<br />
 						</div>
 					</div>
 				</div>
