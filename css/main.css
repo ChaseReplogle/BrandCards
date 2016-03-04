@@ -3206,6 +3206,30 @@ input.pmpro_btn-cancel {
   text-align: left;
   font-size: 12px; }
 
+.public_link_widget .user-title {
+  margin-top: 20px; }
+  .public_link_widget .user-title img {
+    float: right; }
+.public_link_widget input {
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  display: block;
+  background: white;
+  border: 1px solid #EDEDED;
+  color: #9f9f9f;
+  margin-bottom: 10px; }
+  .public_link_widget input::-moz-selection {
+    background: #c8e8d4; }
+  .public_link_widget input::selection {
+    background: #c8e8d4; }
+  .public_link_widget input::-moz-selection {
+    background: #c8e8d4; }
+.public_link_widget p {
+  font-size: 11px;
+  line-height: 15px;
+  color: #b5b5b5; }
+
 .login-form, .post-53, .post-54 {
   width: 40%;
   margin: 0 auto;

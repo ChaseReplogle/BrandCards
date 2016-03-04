@@ -375,3 +375,40 @@
 	text-align: left;
 	font-size: 12px;
 }
+
+
+
+.public_link_widget {
+	.user-title {
+		margin-top: 20px;
+
+		img {
+			float: right;
+		}
+	}
+
+	input {
+		font-size: 13px;
+		padding: 5px 10px;
+		margin-top: 15px;
+		display: block;
+		background: white;
+		border: 1px solid $gray_light;
+		color: lighten($gray, 10%);
+		margin-bottom: 10px;
+
+		&::selection {
+ 			 background: lighten($green, 20%);
+		}
+
+		&::-moz-selection {
+			background: lighten($green, 20%);
+		}
+	}
+
+	p {
+		font-size: 11px;
+		line-height: 15px;
+		color: darken($gray_mid, 10%);
+	}
+}
