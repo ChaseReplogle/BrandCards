@@ -821,7 +821,7 @@
 
 		<h4>BrandCards allows you to:</h4>
 		<ul>
-			<li>Manage all of your brands assets</li>
+			<li>Manage all of your brand's assets</li>
 			<li>Download logos, colors, & fonts</li>
 			<li>Track changes to your brands</li>
 			<li><a href="#" class="learn-more">Learn More</a>
