@@ -1616,6 +1616,8 @@ li > ul, li > ol {
   margin: 0px; }
   .mobile-nav-panel .branding {
     display: none; }
+  .mobile-nav-panel span {
+    display: none; }
   .mobile-nav-panel .avatar {
     display: none; }
   .mobile-nav-panel .menu {
