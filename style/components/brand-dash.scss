@@ -379,14 +379,16 @@
 
 
 .public_link_widget {
+
+	.lock_icon {
+		float: right;
+		height: 15px;
+		width: 14px;
+		margin-top: -28px;
+	}
+
 	.user-title {
 		margin-top: 20px;
-
-		img {
-			float: right;
-			height: 15px;
-			width: 14px;
-		}
 	}
 
 	input {

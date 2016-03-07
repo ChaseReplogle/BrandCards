@@ -82,22 +82,27 @@
     left: 0px;
     height:100%;
     width:100%;
-    background: $gray_light;
-    opacity: .9 !important;
+    background: $gray_lightest;
+    opacity: .95 !important;
     display: none;
 }
 
 .modal {
+	top: 30px !important;
+	overflow:scroll;
+	max-height: 75%;
 	display: none;
 	max-width: 800px;
-	width: 80%;
-    top: 50px !important;
+	width: 90%;
+	max-width: 700px;
 	margin: 0 auto;
 	background: $white;
 	border: 1px solid $gray_mid;
+	box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.05);
 
 	.header {
-		padding: 30px 5% 40px 5%;
+		padding: 60px 10% 60px 10%;
+		text-align: center;
 
 		h4 {
 			font-size: 18px;
@@ -110,7 +115,7 @@
 
 	.form {
 		padding: 30px 5% 40px 5%;
-		background: $gray_lightest;
+		background: $gray_light;
 		border-top: 1px solid $gray-mid;
 
 		.gform_wrapper {
@@ -122,3 +127,115 @@
 
 
 
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default;
+}
+
+
+.help_icon {
+	display: inline-block;
+
+	img {
+		margin-bottom: -2px;
+		margin-left: 3px;
+	}
+}
+
+.help_modal {
+	.header.under-icon {
+		padding-top: 20px;
+	}
+
+	img {
+		padding-bottom: 30px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	h2 {
+		color: black;
+		font-weight: 600;
+	}
+
+	p {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	a {
+		color: $green;
+		font-size: 14px;
+
+		&:visited {
+			color: $green;
+		}
+	}
+
+	.unslider-nav {
+		background: lighten($gray_light, 4%);
+		border-top: 1px solid lighten($gray-mid, 7%);
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+
+		ol {
+			order: 0;
+			width: 100%;
+			margin-left: 15px;
+			display: flex;
+			justify-content: flex-start
+		}
+
+			li {
+				margin: 18px 4px 0px 0px;
+				width: 8px;
+    			height: 8px;
+				display: block;
+				border: 0px;
+				background: lighten($gray-mid, 5%);
+			}
+
+			li.unslider-active {
+				background: $green;
+			}
+
+		.unslider-arrow {
+			position: relative;
+			left: 0;
+			right: 0;
+		}
+
+		.next {
+			order: 1;
+			background: $green;
+			color: white;
+			padding: 10px 20px;
+			font-size: 14px;
+			border-left: 1px solid lighten($gray-mid, 7%);
+		}
+
+		.prev {
+			order: 0;
+			padding: 10px 20px;
+			font-size: 12px;
+			color: $gray-mid;
+		}
+	}
+}

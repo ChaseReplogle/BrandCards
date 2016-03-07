@@ -102,13 +102,15 @@ hr {
 
 .quote {
 	color: $green;
-	font-family: 'Merriweather', serif;
-	font-size: 24px;
-	line-height: 35px;
+	font-size: 30px;
+	line-height: 40px;
 	font-weight: 300;
 }
 
 .citation {
-	margin-top: 20px;
+	margin-top: 10px;
+	font-weight: 200;
+	font-size: 14px;
+	font-style: italic;
 	color: darken($gray_light, 20%);
 }

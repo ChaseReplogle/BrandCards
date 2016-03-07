@@ -57,20 +57,25 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background: #EDEDED;
-  opacity: .9 !important;
+  background: #F9F9F9;
+  opacity: .95 !important;
   display: none; }
 
 .modal {
+  top: 30px !important;
+  overflow: scroll;
+  max-height: 75%;
   display: none;
   max-width: 800px;
-  width: 80%;
-  top: 50px !important;
+  width: 90%;
+  max-width: 700px;
   margin: 0 auto;
   background: #fff;
-  border: 1px solid #CECECE; }
+  border: 1px solid #CECECE;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.05); }
   .modal .header {
-    padding: 30px 5% 40px 5%; }
+    padding: 60px 10% 60px 10%;
+    text-align: center; }
     .modal .header h4 {
       font-size: 18px;
       color: #80CA9C;
@@ -79,11 +84,117 @@
       margin-bottom: 5px; }
   .modal .form {
     padding: 30px 5% 40px 5%;
-    background: #F9F9F9;
+    background: #EDEDED;
     border-top: 1px solid #CECECE; }
     .modal .form .gform_wrapper {
       margin: 0px;
       max-width: 100%; }
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center; }
+
+.unslider-nav ol li {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 2px solid #fff;
+  cursor: pointer; }
+
+.unslider-nav ol li.unslider-active {
+  background: #fff;
+  cursor: default; }
+
+.help_icon {
+  display: inline-block; }
+  .help_icon img {
+    margin-bottom: -2px;
+    margin-left: 3px; }
+
+.help_modal .header.under-icon {
+  padding-top: 20px; }
+.help_modal img {
+  padding-bottom: 30px;
+  margin: 0 auto;
+  display: block; }
+.help_modal h2 {
+  color: black;
+  font-weight: 600; }
+.help_modal p {
+  margin-bottom: 10px;
+  text-align: left; }
+.help_modal a {
+  color: #80CA9C;
+  font-size: 14px; }
+  .help_modal a:visited {
+    color: #80CA9C; }
+.help_modal .unslider-nav {
+  background: #f7f7f7;
+  border-top: 1px solid #e0e0e0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .help_modal .unslider-nav ol {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    margin-left: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .help_modal .unslider-nav li {
+    margin: 18px 4px 0px 0px;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 0px;
+    background: #dbdbdb; }
+  .help_modal .unslider-nav li.unslider-active {
+    background: #80CA9C; }
+  .help_modal .unslider-nav .unslider-arrow {
+    position: relative;
+    left: 0;
+    right: 0; }
+  .help_modal .unslider-nav .next {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    background: #80CA9C;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-left: 1px solid #e0e0e0; }
+  .help_modal .unslider-nav .prev {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #CECECE; }
 
 /*
  * Removes styling and adds spacing for the generic containers used in PMPro Forms
@@ -657,6 +768,53 @@ colpick Color Picker / colpick.com
   padding: 0px 10px;
   border-left: 1px solid #858585; }
 
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+
+.unslider-wrap {
+  position: relative; }
+
+.unslider-wrap.unslider-carousel > li {
+  float: left; }
+
+.unslider-vertical > ul {
+  height: 100%; }
+
+.unslider-vertical li {
+  float: none;
+  width: 100%; }
+
+.unslider-fade {
+  position: relative; }
+
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8; }
+
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10; }
+
+.unslider li, .unslider ol, .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer; }
+
+.unslider-arrow.next {
+  left: auto;
+  right: 20px; }
+
 /*	24 COLUMN : RESPONSIVE GRID SYSTEM
 	DEVELOPER : DENIS LEBLANC
 	URL : http://responsive.gs
@@ -1090,13 +1248,15 @@ hr {
 
 .quote {
   color: #80CA9C;
-  font-family: 'Merriweather', serif;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 300; }
 
 .citation {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 14px;
+  font-style: italic;
   color: #bababa; }
 
 /*
@@ -1865,10 +2025,10 @@ label[for="simple-local-avatar"],
     background: #f1c40f; }
 
 #pass-strength-result.bad, #pass-strength-result.short {
-  color: #c0392b;
+  color: #B95C68;
   background: transparent; }
   #pass-strength-result.bad:before, #pass-strength-result.short:before {
-    background: #c0392b; }
+    background: #B95C68; }
 
 /*
  * Dashboard Styles
@@ -2048,16 +2208,16 @@ input[type="button"] {
   width: 40%; }
 
 .button-warning {
-  background: #c0392b;
+  background: #B95C68;
   color: #fff;
-  border: 1px solid #962d22;
+  border: 1px solid #9e4450;
   font-weight: 300; }
   .button-warning:visited {
     color: #fff; }
   .button-warning:hover {
-    background: #b33528;
+    background: #b4515e;
     box-shadow: none;
-    border: 1px solid #962d22;
+    border: 1px solid #9e4450;
     color: #fff; }
 
 .button .text-icon {
@@ -2085,6 +2245,18 @@ input.pmpro_btn-cancel {
   color: #858585; }
   input.pmpro_btn-cancel:hover {
     box-shadow: none; }
+
+.gform_confirmation_wrapper p a {
+  border: 1px solid #CECECE;
+  color: #CECECE;
+  text-decoration: none;
+  padding: 23px 40px 25px 40px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 13px;
+  webkit-box-shadow: 0px;
+  display: inline-block; }
 
 /*
  * Primary Styles for the print invoice page
@@ -2442,7 +2614,7 @@ input.pmpro_btn-cancel {
   text-align: right;
   float: right; }
   .card-delete:hover {
-    color: #c0392b; }
+    color: #B95C68; }
   @media (max-width: 760px) {
     .card-delete {
       width: 100%;
@@ -3208,12 +3380,13 @@ input.pmpro_btn-cancel {
   text-align: left;
   font-size: 12px; }
 
+.public_link_widget .lock_icon {
+  float: right;
+  height: 15px;
+  width: 14px;
+  margin-top: -28px; }
 .public_link_widget .user-title {
   margin-top: 20px; }
-  .public_link_widget .user-title img {
-    float: right;
-    height: 15px;
-    width: 14px; }
 .public_link_widget input {
   font-size: 13px;
   padding: 5px 10px;
@@ -3296,7 +3469,7 @@ input.pmpro_btn-cancel {
     color: #80CA9C;
     font-size: 14px; }
   .login-form .error, .post-53 .error, .post-54 .error {
-    color: #c0392b; }
+    color: #B95C68; }
 
 form.pmpro_form .pmpro_submit {
   width: 100%;
@@ -3491,7 +3664,7 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 .single-cards .card-left {
   background: white;
   display: block;
-  background-image: -webkit-linear-gradient(180deg, #FFFFFF 20%, #F9F9F9 70%);
+  background-image: -webkit-linear-gradient(right, #FFFFFF 20%, #F9F9F9 70%);
   background-image: linear-gradient(-90deg, #FFFFFF 20%, #F9F9F9 70%);
   border-right: 1px solid #EDEDED; }
   @media (max-width: 641px) {
@@ -3500,7 +3673,7 @@ form.pmpro_form .input, form.pmpro_form textarea, .input, form.pmpro_form select
 .single-cards .card-right {
   background: white;
   display: block;
-  background-image: -webkit-linear-gradient(0deg, #FFFFFF 20%, #F9F9F9 70%);
+  background-image: -webkit-linear-gradient(left, #FFFFFF 20%, #F9F9F9 70%);
   background-image: linear-gradient(-270deg, #FFFFFF 20%, #F9F9F9 70%);
   border-left: 1px solid #EDEDED; }
   @media (max-width: 641px) {
@@ -3764,7 +3937,7 @@ a.activity-toggle:visited {
       color: white; }
 
 #message.error {
-  background: #c0392b;
+  background: #B95C68;
   padding: 10px 0px;
   border-bottom: 1px solid #777777;
   border-top: 1px solid #777777; }
