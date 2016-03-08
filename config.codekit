@@ -276,6 +276,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/search_icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1646,
+		"inputAbbreviatedPath": "\/images\/search_icon.png",
+		"outputAbbreviatedPath": "\/images\/search_icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/white.png": {
 		"fileType": 32768,
 		"ignore": 0,
