@@ -133,12 +133,18 @@
   font-weight: 600; }
 .help_modal p {
   margin-bottom: 10px;
-  text-align: left; }
+  text-align: left;
+  color: #858585; }
 .help_modal a {
   color: #80CA9C;
   font-size: 14px; }
   .help_modal a:visited {
     color: #80CA9C; }
+.help_modal a.button-primary {
+  color: white;
+  margin-top: 30px; }
+  .help_modal a.button-primary:visited {
+    color: white; }
 .help_modal .unslider-nav {
   background: #f7f7f7;
   border-top: 1px solid #e0e0e0;

@@ -199,6 +199,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/help_icons\/help_download.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11593,
+		"inputAbbreviatedPath": "\/images\/help_icons\/help_download.png",
+		"outputAbbreviatedPath": "\/images\/help_icons\/help_download.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/help_icons\/help_owner.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -217,6 +228,17 @@
 		"initialSize": 18526,
 		"inputAbbreviatedPath": "\/images\/help_icons\/help_privacy.png",
 		"outputAbbreviatedPath": "\/images\/help_icons\/help_privacy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/help_icons\/help_swatch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6944,
+		"inputAbbreviatedPath": "\/images\/help_icons\/help_swatch.png",
+		"outputAbbreviatedPath": "\/images\/help_icons\/help_swatch.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -185,6 +185,7 @@
 	p {
 		margin-bottom: 10px;
 		text-align: left;
+		color: $gray;
 	}
 
 	a {
@@ -193,6 +194,15 @@
 
 		&:visited {
 			color: $green;
+		}
+	}
+
+	a.button-primary {
+		color: white;
+		margin-top: 30px;
+
+		&:visited {
+			color: white;
 		}
 	}
 
