@@ -2535,7 +2535,8 @@ input.pmpro_btn-cancel {
     margin-left: .3333333%;
     margin-bottom: .3333333%;
     list-style: none;
-    padding: 0px; }
+    padding: 0px;
+    overflow: hidden; }
     @media (max-width: 641px) {
       .cards-grid .card-item {
         width: 100%;
