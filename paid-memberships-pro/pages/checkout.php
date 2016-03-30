@@ -799,6 +799,7 @@
 	<?php } ?>
 
 	<div class="cost-sidebar">
+		<h5>Free For The First 30 Days!</h5>
 		<?php if($discount_code && pmpro_checkDiscountCode($discount_code)) { ?>
 			<?php printf(__('<p class="pmpro_level_discount_applied">The <strong>%s</strong> code has been applied to your order.</p>', 'pmpro'), $discount_code);?>
 		<?php } ?>
