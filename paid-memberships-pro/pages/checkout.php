@@ -799,12 +799,15 @@
 	<?php } ?>
 
 	<div class="cost-sidebar">
-		<h5>Free For The First 30 Days!</h5>
+		<?php $level_cost = array(2, 3);
+		if (in_array($pmpro_level->id, $level_cost)) { ?>
+			<h5>Free For The First 30 Days!</h5>
+		<?php } ?>
 		<?php if($discount_code && pmpro_checkDiscountCode($discount_code)) { ?>
 			<?php printf(__('<p class="pmpro_level_discount_applied">The <strong>%s</strong> code has been applied to your order.</p>', 'pmpro'), $discount_code);?>
 		<?php } ?>
 		<?php
-		$level_cost = array(1, 2, 3);
+		$level_cost = array(2, 3);
 		if (in_array($pmpro_level->id, $level_cost)) { ?>
 			<div class="price">
 				<?php echo wpautop(pmpro_getLevelCost($pmpro_level)); ?>
